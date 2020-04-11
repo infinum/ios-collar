@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AnalyticsCollector: b9e57d7887b8b2fcb366f3a597c88e568ddb8bef
+  AnalyticsCollector: 3e5d3e48edbec1a3cc70c31da65582e414f32dee
 
 PODFILE CHECKSUM: e14291a17c58aace1d2cd9a7d813f03e0dc1c748
 

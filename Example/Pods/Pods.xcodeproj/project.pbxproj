@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0482D0BBF12E5700CFA67D1869EEE697 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B798546678DE293D1C900F8F1287162 /* Images.xcassets */; };
 		04C989021FFEDB948DDDCF7FA38CF1DF /* Pods-AnalyticsCollector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8098EDA1C117DF99D989BCCF907F6E /* Pods-AnalyticsCollector_Example-dummy.m */; };
-		0E2E258AECA963511DC94DF4033E5797 /* LogHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E22993C3820BA52AACCC46D7F71DA3 /* LogHeaderFooterView.swift */; };
-		14F2C7DB4B772033666DFB806443A74A /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E8757B347586BB0A06B83A643BA6F /* LogItemPopupQueue.swift */; };
-		415F2A7312E59AABE85BD5C77AF1F857 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16804951360D7DBD48388D0812AE00D4 /* LogTableViewCell.swift */; };
-		516B8BF44678D32015614FD4A884FEE0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D2197DD46EA4F87CBA6723A65836A /* SettingsViewController.swift */; };
-		56EF0F365B0B22BBE1C37DD6150BC4F6 /* AnalyticsCollector+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97D39D813E17B8951372C7F344804F /* AnalyticsCollector+UI.swift */; };
-		6A6F073F1BEDFE9652D734F921D6F15A /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0023DFF39711015BEA0228B670BD9F /* UIView+LayoutGuide.swift */; };
+		0E2E258AECA963511DC94DF4033E5797 /* LogHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */; };
+		14F2C7DB4B772033666DFB806443A74A /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */; };
+		415F2A7312E59AABE85BD5C77AF1F857 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */; };
+		4C2DF37138BAD7ABF7DCCDEA32A20801 /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */; };
+		516B8BF44678D32015614FD4A884FEE0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */; };
+		56EF0F365B0B22BBE1C37DD6150BC4F6 /* AnalyticsCollector+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */; };
+		6A6F073F1BEDFE9652D734F921D6F15A /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */; };
 		743B1B4F6A4B9218508A98DB2DD798D3 /* Pods-AnalyticsCollector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42EEF49852C593CF1D24D8368432000 /* Pods-AnalyticsCollector_Tests-dummy.m */; };
-		752E7DB9A4F5D7BC88680AEDBE716950 /* AnalyticsCollector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D47198566668F444865F696FC94D7D98 /* AnalyticsCollector-dummy.m */; };
-		759310DE2937280C9DCA2C2CE15077E1 /* UITableView+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEA10067C35EC80343778F0B8B9AE3C /* UITableView+Reuse.swift */; };
-		8BAF0F6CEF27CB30FDD1C42743983FB4 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B3577FF5FCE3CDA389B340E015D42C /* Bundle+Framework.swift */; };
-		A2343C508297D53211162F9FD65B8234 /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E5BD4C7D735B4DB7F5F12120E3D45C /* LogTableViewCell.xib */; };
-		A41326CD7E4E3732B5C3FD128CF3B078 /* LogItemPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100746029D4773FE84478FE5E4D3CB5 /* LogItemPopupView.swift */; };
-		B24E265FDBDFF33D612A37C13C46280A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D276A8FFAD468A813FF2772EE0C3BD5 /* Images.xcassets */; };
-		BA8B8BB2CEE5CDA0106AAD3EE722D7CD /* AnalyticsCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FCA7761610024989246B874D01A39 /* AnalyticsCollectionManager.swift */; };
-		BFA9F90C64A64F753862953ED0C8FD4A /* LogItemPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C23D8D09288848033E2053761C205EF /* LogItemPopupView.xib */; };
-		C64A17F5C6A4D2A6E469DF6E0609EC96 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9927FA71E553E33DC32B9D122A53DF /* Settings.storyboard */; };
-		C9A0BDEA21CEB400D16598D51399CECC /* AnalyticsCollector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 519CB8326B54C110A2B0704B7D3E7C76 /* AnalyticsCollector-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		752E7DB9A4F5D7BC88680AEDBE716950 /* AnalyticsCollector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */; };
+		759310DE2937280C9DCA2C2CE15077E1 /* UITableView+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */; };
+		8BAF0F6CEF27CB30FDD1C42743983FB4 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */; };
+		9AC1AC02F936F1D206FEAD1960827888 /* LogItemPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */; };
+		A41326CD7E4E3732B5C3FD128CF3B078 /* LogItemPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */; };
+		BA026C2BD631AB92ACFF1EE3C31D59EC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */; };
+		BA8B8BB2CEE5CDA0106AAD3EE722D7CD /* AnalyticsCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */; };
+		C9A0BDEA21CEB400D16598D51399CECC /* AnalyticsCollector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F33B2DC8F7AAB9B07A6F82CF85BCA34B /* Pods-AnalyticsCollector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A94C91FC7140632E15F360FBF6E5EE6 /* Pods-AnalyticsCollector_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FE35EE9D0246540D6C37AA3191A9206B /* LogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80780C89741EF632C270CF1AE290E040 /* LogListViewController.swift */; };
+		FE35EE9D0246540D6C37AA3191A9206B /* LogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,49 +54,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0100746029D4773FE84478FE5E4D3CB5 /* LogItemPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupView.swift; sourceTree = "<group>"; };
-		035B844EADD77D5FAA0B73B3F67979E6 /* AnalyticsCollector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.debug.xcconfig; sourceTree = "<group>"; };
 		06707876FC0FC7DBFD54397A01DB154E /* libAnalyticsCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAnalyticsCollector.a; path = libAnalyticsCollector.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		109EC18851970CC81E7FCA7981281ABD /* Pods-AnalyticsCollector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnalyticsCollector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		16804951360D7DBD48388D0812AE00D4 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
-		1D276A8FFAD468A813FF2772EE0C3BD5 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AnalyticsCollector/Assets/Images.xcassets; sourceTree = "<group>"; };
-		2269839457B9D9EE42AC8394536AE1D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
+		1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogItemPopupView.xib; path = Sources/AnalyticsCollector/Assets/LogItemPopupView.xib; sourceTree = "<group>"; };
 		316D1B01FB4D65D2E3B314EC74BE660F /* Pods-AnalyticsCollector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnalyticsCollector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		35B9FB87188550A85BD2AECB2C146ACC /* AnalyticsCollector.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AnalyticsCollector.bundle; path = "AnalyticsCollector-AnalyticsCollector.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3727BC221D09273EE806963897223A22 /* Pods-AnalyticsCollector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnalyticsCollector_Example.modulemap"; sourceTree = "<group>"; };
-		3C23D8D09288848033E2053761C205EF /* LogItemPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogItemPopupView.xib; path = AnalyticsCollector/Assets/LogItemPopupView.xib; sourceTree = "<group>"; };
-		42BB960DB26A823EC7A2B3E9F8E544B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		489E8757B347586BB0A06B83A643BA6F /* LogItemPopupQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupQueue.swift; sourceTree = "<group>"; };
+		3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/AnalyticsCollector/Assets/Settings.storyboard; sourceTree = "<group>"; };
+		49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.release.xcconfig; sourceTree = "<group>"; };
 		4A94C91FC7140632E15F360FBF6E5EE6 /* Pods-AnalyticsCollector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnalyticsCollector_Example-umbrella.h"; sourceTree = "<group>"; };
 		4B3336D58CD92E0C8F72B2C48DFED2E6 /* Pods-AnalyticsCollector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnalyticsCollector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4F7B3806863E4812D90A2ACEE9A8497B /* Pods-AnalyticsCollector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Example.release.xcconfig"; sourceTree = "<group>"; };
-		519CB8326B54C110A2B0704B7D3E7C76 /* AnalyticsCollector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-umbrella.h"; sourceTree = "<group>"; };
-		52E22993C3820BA52AACCC46D7F71DA3 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
-		59FED1ACB339018594E2D06E96024E83 /* AnalyticsCollector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-prefix.pch"; sourceTree = "<group>"; };
-		5F2A48EA6586A533BF8DDE595638F3D4 /* AnalyticsCollector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.release.xcconfig; sourceTree = "<group>"; };
-		60E2D2AB23286797EB8ABE3D7B01E0A9 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist"; sourceTree = "<group>"; };
-		6BE9FB568A87023FF72757E8569CCAB3 /* AnalyticsCollector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AnalyticsCollector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
+		5E2E5FDFB024710A13641D8543F9FE0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupView.swift; sourceTree = "<group>"; };
+		6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.debug.xcconfig; sourceTree = "<group>"; };
 		6DA4160FD2EFDCB9806A8C6C75CFEAF7 /* libPods-AnalyticsCollector_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AnalyticsCollector_Example.a"; path = "libPods-AnalyticsCollector_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73E5BD4C7D735B4DB7F5F12120E3D45C /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = AnalyticsCollector/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
-		76B3577FF5FCE3CDA389B340E015D42C /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
+		74081504A0A1C8FC235F2762AE21BE4C /* AnalyticsCollector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnalyticsCollector.modulemap; sourceTree = "<group>"; };
+		7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = Sources/AnalyticsCollector/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
 		76B361AC536752304F2B3B15EB6389E1 /* Pods-AnalyticsCollector_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnalyticsCollector_Example-resources.sh"; sourceTree = "<group>"; };
-		80780C89741EF632C270CF1AE290E040 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
+		7B798546678DE293D1C900F8F1287162 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/AnalyticsCollector/Assets/Images.xcassets; sourceTree = "<group>"; };
+		7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
+		8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
 		8E0E363F4D1BF208D3DCC45C5E8F9D6F /* Pods-AnalyticsCollector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8F2FCA7761610024989246B874D01A39 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E33E9088BA018199DF98847D57C2554 /* Pods-AnalyticsCollector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AB4F70F5A345836360A9A6BA7C538F7E /* AnalyticsCollector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnalyticsCollector.modulemap; sourceTree = "<group>"; };
+		A24C07A062D0A90661512D8138219402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A295715B3108875E609254B786CE4239 /* AnalyticsCollector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AnalyticsCollector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AnalyticsCollector+UI.swift"; sourceTree = "<group>"; };
 		AC8098EDA1C117DF99D989BCCF907F6E /* Pods-AnalyticsCollector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnalyticsCollector_Example-dummy.m"; sourceTree = "<group>"; };
-		AD0023DFF39711015BEA0228B670BD9F /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
+		AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-umbrella.h"; sourceTree = "<group>"; };
 		B2657CDFB802ECFB36250DE096C1511B /* Pods-AnalyticsCollector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnalyticsCollector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BFEA10067C35EC80343778F0B8B9AE3C /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
+		B4603607D75149C144BBE2D8930D7D8B /* AnalyticsCollector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-prefix.pch"; sourceTree = "<group>"; };
+		B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
 		C42EEF49852C593CF1D24D8368432000 /* Pods-AnalyticsCollector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnalyticsCollector_Tests-dummy.m"; sourceTree = "<group>"; };
-		C67D2197DD46EA4F87CBA6723A65836A /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C6D82D424526223445B62D337FA2C48F /* libPods-AnalyticsCollector_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AnalyticsCollector_Tests.a"; path = "libPods-AnalyticsCollector_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D47198566668F444865F696FC94D7D98 /* AnalyticsCollector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnalyticsCollector-dummy.m"; sourceTree = "<group>"; };
-		DC97D39D813E17B8951372C7F344804F /* AnalyticsCollector+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AnalyticsCollector+UI.swift"; sourceTree = "<group>"; };
-		ED9927FA71E553E33DC32B9D122A53DF /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = AnalyticsCollector/Assets/Settings.storyboard; sourceTree = "<group>"; };
+		CA0E90AB486D7EA179144F6945C7E188 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist"; sourceTree = "<group>"; };
+		D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnalyticsCollector-dummy.m"; sourceTree = "<group>"; };
+		EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupQueue.swift; sourceTree = "<group>"; };
 		EF9D3274C855E5279E932F6AADFAAA2A /* Pods-AnalyticsCollector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,25 +131,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E128DDDA697C6DBA1B3A9B4F497D4DA /* Resources */ = {
+		0D3E4BEECD8664AB4E03103AF2A1D485 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1D276A8FFAD468A813FF2772EE0C3BD5 /* Images.xcassets */,
-				3C23D8D09288848033E2053761C205EF /* LogItemPopupView.xib */,
-				73E5BD4C7D735B4DB7F5F12120E3D45C /* LogTableViewCell.xib */,
-				ED9927FA71E553E33DC32B9D122A53DF /* Settings.storyboard */,
+				7B798546678DE293D1C900F8F1287162 /* Images.xcassets */,
+				244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */,
+				7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */,
+				3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		2660D15F5F527AA9490349BAD835C2E0 /* Collector */ = {
+		1170A77A65E26CA5259FC3AE06DCCE20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8F2FCA7761610024989246B874D01A39 /* AnalyticsCollectionManager.swift */,
-				DC97D39D813E17B8951372C7F344804F /* AnalyticsCollector+UI.swift */,
+				6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */,
 			);
-			name = Collector;
-			path = AnalyticsCollector/Classes/Collector;
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		2B99D66D3C4AE8578727D7E38F10A97F /* Targets Support Files */ = {
@@ -161,10 +160,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		2C567C39F8DDCCB395285AC0421CDFC1 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */,
+				1170A77A65E26CA5259FC3AE06DCCE20 /* View */,
+			);
+			name = Popup;
+			path = Sources/AnalyticsCollector/Classes/Popup;
+			sourceTree = "<group>";
+		};
 		42F508D7A101FDCF700C860D8947B092 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8FBE7AE9E98FC1BAB02D3ABD2E2ECCFE /* AnalyticsCollector */,
+				932145216A2F7271F7AA348B12A96AB3 /* AnalyticsCollector */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -182,73 +191,31 @@
 			path = "Target Support Files/Pods-AnalyticsCollector_Tests";
 			sourceTree = "<group>";
 		};
-		60688E0FA5AABA7268BAC2318462E48D /* List */ = {
+		8B503BD9E659E386DA5CC93A4A596CAE /* List */ = {
 			isa = PBXGroup;
 			children = (
-				80780C89741EF632C270CF1AE290E040 /* LogListViewController.swift */,
-				690E9E413DFA4553A96F978ADD5E853A /* Cell */,
-				D5B86FDC48845920217A5D13570D8EDC /* Views */,
+				175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */,
+				FAD46EC7787D45CAC3C413ED1473DA7B /* Cell */,
+				ABB46D81E12A19BC2B5DEFAE37AB910C /* Views */,
 			);
 			name = List;
-			path = AnalyticsCollector/Classes/List;
+			path = Sources/AnalyticsCollector/Classes/List;
 			sourceTree = "<group>";
 		};
-		669612357B2D0646C2AD0362C2C3679A /* Support Files */ = {
+		932145216A2F7271F7AA348B12A96AB3 /* AnalyticsCollector */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F70F5A345836360A9A6BA7C538F7E /* AnalyticsCollector.modulemap */,
-				D47198566668F444865F696FC94D7D98 /* AnalyticsCollector-dummy.m */,
-				59FED1ACB339018594E2D06E96024E83 /* AnalyticsCollector-prefix.pch */,
-				519CB8326B54C110A2B0704B7D3E7C76 /* AnalyticsCollector-umbrella.h */,
-				035B844EADD77D5FAA0B73B3F67979E6 /* AnalyticsCollector.debug.xcconfig */,
-				5F2A48EA6586A533BF8DDE595638F3D4 /* AnalyticsCollector.release.xcconfig */,
-				60E2D2AB23286797EB8ABE3D7B01E0A9 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AnalyticsCollector";
-			sourceTree = "<group>";
-		};
-		690E9E413DFA4553A96F978ADD5E853A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				16804951360D7DBD48388D0812AE00D4 /* LogTableViewCell.swift */,
-			);
-			name = Cell;
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		7EB92EC74C6A26A99BC298AAAFD09E44 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				C67D2197DD46EA4F87CBA6723A65836A /* SettingsViewController.swift */,
-			);
-			name = Settings;
-			path = AnalyticsCollector/Classes/Settings;
-			sourceTree = "<group>";
-		};
-		8FBE7AE9E98FC1BAB02D3ABD2E2ECCFE /* AnalyticsCollector */ = {
-			isa = PBXGroup;
-			children = (
-				2660D15F5F527AA9490349BAD835C2E0 /* Collector */,
-				9B847B899087653E9F979472F8BB973B /* Common */,
-				60688E0FA5AABA7268BAC2318462E48D /* List */,
-				E1D83166631261BFC65C1F95696AB3D1 /* Pod */,
-				DDD26AAE9B665165062453E2740252F7 /* Popup */,
-				0E128DDDA697C6DBA1B3A9B4F497D4DA /* Resources */,
-				7EB92EC74C6A26A99BC298AAAFD09E44 /* Settings */,
-				669612357B2D0646C2AD0362C2C3679A /* Support Files */,
+				B6410836FF8D67955800649097AB0A5D /* Collector */,
+				A32B92FC765482D59EED3FA205267464 /* Common */,
+				8B503BD9E659E386DA5CC93A4A596CAE /* List */,
+				A77534464364E828DA82E112A18EE173 /* Pod */,
+				2C567C39F8DDCCB395285AC0421CDFC1 /* Popup */,
+				0D3E4BEECD8664AB4E03103AF2A1D485 /* Resources */,
+				E2861A6091A52810C9F73E665CDE4556 /* Settings */,
+				B82DF1EA6C8BD373EB635E8A96135CFD /* Support Files */,
 			);
 			name = AnalyticsCollector;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		90A534A2353AEF1EB4AE0AA9F2EE1A28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0100746029D4773FE84478FE5E4D3CB5 /* LogItemPopupView.swift */,
-			);
-			name = View;
-			path = View;
 			sourceTree = "<group>";
 		};
 		9A85C89617E0A3081CCFA268D7A6355A /* Pods-AnalyticsCollector_Example */ = {
@@ -267,17 +234,6 @@
 			path = "Target Support Files/Pods-AnalyticsCollector_Example";
 			sourceTree = "<group>";
 		};
-		9B847B899087653E9F979472F8BB973B /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				76B3577FF5FCE3CDA389B340E015D42C /* Bundle+Framework.swift */,
-				BFEA10067C35EC80343778F0B8B9AE3C /* UITableView+Reuse.swift */,
-				AD0023DFF39711015BEA0228B670BD9F /* UIView+LayoutGuide.swift */,
-			);
-			name = Common;
-			path = AnalyticsCollector/Classes/Common;
-			sourceTree = "<group>";
-		};
 		9DB45811F68842DCF075FA9E800A39C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +243,61 @@
 				C6D82D424526223445B62D337FA2C48F /* libPods-AnalyticsCollector_Tests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A32B92FC765482D59EED3FA205267464 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */,
+				8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */,
+				B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */,
+			);
+			name = Common;
+			path = Sources/AnalyticsCollector/Classes/Common;
+			sourceTree = "<group>";
+		};
+		A77534464364E828DA82E112A18EE173 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A295715B3108875E609254B786CE4239 /* AnalyticsCollector.podspec */,
+				5E2E5FDFB024710A13641D8543F9FE0F /* LICENSE */,
+				A24C07A062D0A90661512D8138219402 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ABB46D81E12A19BC2B5DEFAE37AB910C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6410836FF8D67955800649097AB0A5D /* Collector */ = {
+			isa = PBXGroup;
+			children = (
+				8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */,
+				A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */,
+			);
+			name = Collector;
+			path = Sources/AnalyticsCollector/Classes/Collector;
+			sourceTree = "<group>";
+		};
+		B82DF1EA6C8BD373EB635E8A96135CFD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74081504A0A1C8FC235F2762AE21BE4C /* AnalyticsCollector.modulemap */,
+				D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */,
+				B4603607D75149C144BBE2D8930D7D8B /* AnalyticsCollector-prefix.pch */,
+				AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */,
+				6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */,
+				49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */,
+				CA0E90AB486D7EA179144F6945C7E188 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AnalyticsCollector";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -300,15 +311,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D5B86FDC48845920217A5D13570D8EDC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52E22993C3820BA52AACCC46D7F71DA3 /* LogHeaderFooterView.swift */,
-			);
-			name = Views;
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,24 +318,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDD26AAE9B665165062453E2740252F7 /* Popup */ = {
+		E2861A6091A52810C9F73E665CDE4556 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				489E8757B347586BB0A06B83A643BA6F /* LogItemPopupQueue.swift */,
-				90A534A2353AEF1EB4AE0AA9F2EE1A28 /* View */,
+				1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */,
 			);
-			name = Popup;
-			path = AnalyticsCollector/Classes/Popup;
+			name = Settings;
+			path = Sources/AnalyticsCollector/Classes/Settings;
 			sourceTree = "<group>";
 		};
-		E1D83166631261BFC65C1F95696AB3D1 /* Pod */ = {
+		FAD46EC7787D45CAC3C413ED1473DA7B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				6BE9FB568A87023FF72757E8569CCAB3 /* AnalyticsCollector.podspec */,
-				2269839457B9D9EE42AC8394536AE1D3 /* LICENSE */,
-				42BB960DB26A823EC7A2B3E9F8E544B2 /* README.md */,
+				7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */,
 			);
-			name = Pod;
+			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,10 +472,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24E265FDBDFF33D612A37C13C46280A /* Images.xcassets in Resources */,
-				BFA9F90C64A64F753862953ED0C8FD4A /* LogItemPopupView.xib in Resources */,
-				A2343C508297D53211162F9FD65B8234 /* LogTableViewCell.xib in Resources */,
-				C64A17F5C6A4D2A6E469DF6E0609EC96 /* Settings.storyboard in Resources */,
+				0482D0BBF12E5700CFA67D1869EEE697 /* Images.xcassets in Resources */,
+				9AC1AC02F936F1D206FEAD1960827888 /* LogItemPopupView.xib in Resources */,
+				4C2DF37138BAD7ABF7DCCDEA32A20801 /* LogTableViewCell.xib in Resources */,
+				BA026C2BD631AB92ACFF1EE3C31D59EC /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +577,7 @@
 /* Begin XCBuildConfiguration section */
 		0242F0F0353AE19DC038E6E691AAAED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 035B844EADD77D5FAA0B73B3F67979E6 /* AnalyticsCollector.debug.xcconfig */;
+			baseConfigurationReference = 6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AnalyticsCollector";
@@ -658,7 +658,7 @@
 		};
 		1DC20CFE1CCD842286AA0ADBB36D0058 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 035B844EADD77D5FAA0B73B3F67979E6 /* AnalyticsCollector.debug.xcconfig */;
+			baseConfigurationReference = 6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -813,7 +813,7 @@
 		};
 		BC4F41E13B38FD939A6DED17DC786D44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F2A48EA6586A533BF8DDE595638F3D4 /* AnalyticsCollector.release.xcconfig */;
+			baseConfigurationReference = 49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AnalyticsCollector";
@@ -853,7 +853,7 @@
 		};
 		CFF8693C1DCDF8AE8E8BC20A07B131DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F2A48EA6586A533BF8DDE595638F3D4 /* AnalyticsCollector.release.xcconfig */;
+			baseConfigurationReference = 49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -1,6 +1,6 @@
 //
 //  AnalyticsLogTableViewCell.swift
-//  CoreNavigation
+//  AnalyticsCollector
 //
 //  Created by Filip Gulan on 06/03/2020.
 //  Copyright © 2020 Infinum. All rights reserved.

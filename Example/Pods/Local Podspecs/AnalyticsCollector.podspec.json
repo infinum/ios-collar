@@ -18,11 +18,14 @@
   "platforms": {
     "ios": "10.0"
   },
-  "swift_versions": "5.1",
-  "source_files": "AnalyticsCollector/Classes/**/*",
+  "swift_versions": [
+    "5.0",
+    "5.1"
+  ],
+  "source_files": "Sources/AnalyticsCollector/Classes/**/*",
   "resource_bundles": {
     "AnalyticsCollector": [
-      "AnalyticsCollector/Assets/**/*"
+      "Sources/AnalyticsCollector/Assets/**/*"
     ]
   },
   "frameworks": "UIKit",
