@@ -42,8 +42,8 @@ public struct LogItem {
 
 public class AnalyticsCollectionManager {
     
-    enum Notification {
-        static var didUpdateLogs = Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
+    public enum Notification {
+        public static var didUpdateLogs = Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
     }
     
     public static let shared = AnalyticsCollectionManager()

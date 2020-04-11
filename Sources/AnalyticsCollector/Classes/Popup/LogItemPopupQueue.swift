@@ -20,7 +20,7 @@ public class LogItemPopupQueue {
     
     // MARK: - Internal properties
     
-    internal var enabled: Bool {
+    public var enabled: Bool {
         get { UserDefaults.standard.bool(forKey: Constants.enabledUserDefaultsKey) }
         set { UserDefaults.standard.set(newValue, forKey: Constants.enabledUserDefaultsKey) }
     }
