@@ -1,6 +1,5 @@
 # AnalyticsCollector
 
-[![CI Status](https://img.shields.io/travis/Filip Gulan/AnalyticsCollector.svg?style=flat)](https://travis-ci.org/Filip Gulan/AnalyticsCollector)
 [![Version](https://img.shields.io/cocoapods/v/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
 [![License](https://img.shields.io/cocoapods/l/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
 [![Platform](https://img.shields.io/cocoapods/p/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
