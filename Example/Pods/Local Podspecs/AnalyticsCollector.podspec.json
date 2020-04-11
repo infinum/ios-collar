@@ -1,0 +1,26 @@
+{
+  "name": "AnalyticsCollector",
+  "version": "1.0",
+  "summary": "In-app analytics debugging tool.",
+  "description": "In-app analytics debugging tool.",
+  "homepage": "https://github.com/infinum/ios-analytics-collector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Filip Gulan": "gulan.filip@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/infinum/ios-analytics-collector.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "AnalyticsCollector/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
+}

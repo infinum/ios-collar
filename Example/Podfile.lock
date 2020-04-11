@@ -1,0 +1,16 @@
+PODS:
+  - AnalyticsCollector (1.0)
+
+DEPENDENCIES:
+  - AnalyticsCollector (from `../`)
+
+EXTERNAL SOURCES:
+  AnalyticsCollector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnalyticsCollector: 729bc59a715c435b6b25cf323b7f5d76b4af921f
+
+PODFILE CHECKSUM: 03b821ec600c543105577b5e14fa87c1083c879b
+
+COCOAPODS: 1.9.1
