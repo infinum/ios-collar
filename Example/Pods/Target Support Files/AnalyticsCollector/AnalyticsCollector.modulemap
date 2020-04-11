@@ -1,4 +1,4 @@
-framework module AnalyticsCollector {
+module AnalyticsCollector {
   umbrella header "AnalyticsCollector-umbrella.h"
 
   export *
