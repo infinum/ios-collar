@@ -66,10 +66,13 @@ private extension LogItemPopupQueue {
                     withDuration: 0.3,
                     animations: { [weak self] in self?.visiblePopupView?.alpha = 0.0 },
                     completion: { [weak self] _ in
-                        self?.currentTimer = nil
-                        self?.visiblePopupView?.removeFromSuperview()
-                        self?.visiblePopupView = nil
-                        self?.itemsToShow.removeFirst()
+                        guard let self = self else { return }
+                        self.currentTimer = nil
+                        self.visiblePopupView?.removeFromSuperview()
+                        self.visiblePopupView = nil
+                        if !self.itemsToShow.isEmpty {
+                            self.itemsToShow.removeFirst()
+                        }
                     })
             }
         }
@@ -82,11 +85,14 @@ private extension LogItemPopupQueue {
         popupView.configure(with: logItem)
         popupView.translatesAutoresizingMaskIntoConstraints = false
         popupView.dismissPopup = { [weak self] in
-            self?.currentTimer?.invalidate()
-            self?.currentTimer = nil
-            self?.visiblePopupView?.removeFromSuperview()
-            self?.visiblePopupView = nil
-            self?.itemsToShow.removeFirst()
+            guard let self = self else { return }
+            self.currentTimer?.invalidate()
+            self.currentTimer = nil
+            self.visiblePopupView?.removeFromSuperview()
+            self.visiblePopupView = nil
+            if !self.itemsToShow.isEmpty {
+                self.itemsToShow.removeFirst()
+            }
         }
         
         parentView.addSubview(popupView)
