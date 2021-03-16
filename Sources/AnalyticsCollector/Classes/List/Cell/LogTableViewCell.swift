@@ -17,12 +17,16 @@ class LogTableViewCell: UITableViewCell {
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet private weak var typeImageView: UIImageView!
     @IBOutlet private weak var lineContainerView: UIView!
+
+    @IBOutlet private weak var headerContainerView: UIView!
+    @IBOutlet private weak var footerContainerView: UIView!
     
     // MARK: - Lifecycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
         addShadow(to: lineContainerView)
+        setupHeaderAndFooterViews()
     }
     
     override func prepareForReuse() {
@@ -39,11 +43,13 @@ class LogTableViewCell: UITableViewCell {
         typeImageView.layer.cornerRadius = typeImageView.bounds.width / 2
     }
     
-    func configure(with logItem: LogItem, dateInfo: String?) {
+    func configure(with logItem: LogItem, dateInfo: String?, showHeader: Bool, showFooter: Bool) {
         titleLabel.text = logItem.name
         subtitleLabel.text = logItem.subtitleDisplay
         typeImageView.image = logItem.coloredImage
         dateLabel.text = dateInfo
+        headerContainerView.hiddenSafely = !showHeader
+        footerContainerView.hiddenSafely = !showFooter
         hideLabelsIfNeeded()
     }
 }
@@ -61,6 +67,29 @@ private extension LogTableViewCell {
         view.layer.shadowOpacity = 0.4
         view.layer.shadowOffset = .init(width: 1, height: 2)
         view.layer.shadowRadius = 1
+    }
+
+    func setupHeaderAndFooterViews() {
+        let headerView = LogHeaderFooterView(height: 32, bulletType: .top)
+        headerContainerView.addSubview(headerView)
+        NSLayoutConstraint.activate([
+            headerView.leadingAnchor.constraint(equalTo: headerContainerView.leadingAnchor),
+            headerView.trailingAnchor.constraint(equalTo: headerContainerView.trailingAnchor),
+            headerView.topAnchor.constraint(equalTo: headerContainerView.topAnchor),
+            headerView.bottomAnchor.constraint(equalTo: headerContainerView.bottomAnchor)
+        ])
+
+        let footerView = LogHeaderFooterView(height: 32, bulletType: .bottom)
+        footerContainerView.addSubview(footerView)
+        NSLayoutConstraint.activate([
+            footerView.leadingAnchor.constraint(equalTo: footerContainerView.leadingAnchor),
+            footerView.trailingAnchor.constraint(equalTo: footerContainerView.trailingAnchor),
+            footerView.topAnchor.constraint(equalTo: footerContainerView.topAnchor),
+            footerView.bottomAnchor.constraint(equalTo: footerContainerView.bottomAnchor)
+        ])
+
+        headerContainerView.hiddenSafely = false
+        footerContainerView.hiddenSafely = false
     }
 }
 
@@ -88,10 +117,8 @@ extension LogItem {
         switch type {
         case .event:
             return paramsJSONString
-        case .userProperty:
+        case .userProperty, .screen:
             return value
-        case .screen:
-            return nil
         }
     }
     

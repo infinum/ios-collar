@@ -11,8 +11,8 @@ In-app analytics debugging tool.
   s.author           = { 'Filip Gulan' => 'gulan.filip@gmail.com' }
   s.source           = { :git => 'https://github.com/infinum/ios-analytics-collector.git', :tag => s.version.to_s }
   s.platform         = :ios
-  s.swift_version    = ['5.0','5.1']
-  s.ios.deployment_target = '10.0'
+  s.swift_version    = ['5.1']
+  s.ios.deployment_target = '11.0'
   s.source_files = 'Sources/AnalyticsCollector/Classes/**/*'
   s.resource_bundles = { 'AnalyticsCollector' => ['Sources/AnalyticsCollector/Assets/**/*'] }
   s.frameworks = 'UIKit'

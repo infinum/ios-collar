@@ -17,9 +17,7 @@ public extension AnalyticsCollectionManager {
         let logViewController = LogListViewController()
 
         let navigationController = UINavigationController(rootViewController: logViewController)
-        navigationController.navigationBar.isTranslucent = false
         viewController.present(navigationController, animated: true)
         return navigationController
     }
-
 }

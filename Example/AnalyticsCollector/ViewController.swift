@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            AnalyticsCollectionManager.shared.track(screenName: "View Controller", screenClass: "UIViewController")
+            AnalyticsCollectionManager.shared.track(screenName: "Profile Screen", screenClass: "UIViewController")
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
@@ -36,4 +36,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

@@ -27,6 +27,7 @@ class LogHeaderFooterView: UIView {
 private extension LogHeaderFooterView {
     
     func setupView(height: CGFloat, bulletType: BulletType, color: UIColor) {
+        translatesAutoresizingMaskIntoConstraints = false
         let inset: CGFloat = 4
         let line = setupLine(type: bulletType, color: color, inset: inset)
         setupBullet(type: bulletType, line: line, color: color)
@@ -46,7 +47,7 @@ private extension LogHeaderFooterView {
         NSLayoutConstraint.activate([
             line.topAnchor.constraint(equalTo: topAnchor, constant: isTop ? inset : 0),
             line.bottomAnchor.constraint(equalTo: bottomAnchor, constant: isTop ? 0 : inset),
-            line.leadingAnchor.constraint(equalTo: saferAreaLayoutGuide.leadingAnchor, constant: 95),
+            line.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 95),
             line.widthAnchor.constraint(equalToConstant: 2)
         ])
         line.backgroundColor = color

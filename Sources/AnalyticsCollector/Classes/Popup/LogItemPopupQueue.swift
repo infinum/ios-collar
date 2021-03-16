@@ -99,11 +99,11 @@ private extension LogItemPopupQueue {
         
         NSLayoutConstraint.activate([
             popupView.leadingAnchor
-                .constraint(equalTo: parentView.saferAreaLayoutGuide.leadingAnchor, constant: 24),
+                .constraint(equalTo: parentView.safeAreaLayoutGuide.leadingAnchor, constant: 24),
             popupView.trailingAnchor
-                .constraint(equalTo: parentView.saferAreaLayoutGuide.trailingAnchor, constant: -24),
+                .constraint(equalTo: parentView.safeAreaLayoutGuide.trailingAnchor, constant: -24),
             popupView.bottomAnchor
-                .constraint(equalTo: parentView.saferAreaLayoutGuide.bottomAnchor, constant: -80)
+                .constraint(equalTo: parentView.safeAreaLayoutGuide.bottomAnchor, constant: -80)
         ])
         parentView.bringSubviewToFront(popupView)
         
