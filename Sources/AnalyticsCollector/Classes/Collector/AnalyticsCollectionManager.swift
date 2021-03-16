@@ -8,17 +8,21 @@
 
 import Foundation
 
-public enum LogType {
-    case userProperty, event, screen
+public enum LogType: String {
+    case userProperty = "User property"
+    case event = "Event"
+    case screen = "Screen view"
 }
 
-public struct LogItem {
+public struct LogItem: CustomStringConvertible {
     public let type: LogType
     public let name: String
     public let timestamp: Date
     public let value: String?
     public let parameters: [String: Any]?
-    
+
+    static let dateFormatter = ISO8601DateFormatter()
+
     init(screenName: String, screenClass: String?) {
         self.init(type: .screen, name: screenName, value: screenClass)
     }
@@ -37,6 +41,25 @@ public struct LogItem {
         self.timestamp = timestamp
         self.value = value
         self.parameters = parameters
+    }
+
+    public var description: String {
+        var lines: [String] = []
+        lines.append("Type: \(type.rawValue)")
+        lines.append("Name: \(name)")
+        lines.append("Timestamp: \(LogItem.dateFormatter.string(from: timestamp))")
+        if let value = value {
+            switch type {
+            case .screen:
+                lines.append("Screen class: \(value)")
+            default:
+                lines.append("Value: \(value)")
+            }
+        }
+        if let params = paramsJSONString {
+            lines.append("Parameters: \(params)")
+        }
+        return lines.joined(separator: "\n")
     }
 }
 

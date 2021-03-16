@@ -46,8 +46,7 @@ public class LogListViewController: UITableViewController {
     private var isFiltering: Bool {
         let searchBarScopeIsFiltering =
             searchController.searchBar.selectedScopeButtonIndex != 0
-        return searchController.isActive &&
-            (!isSearchBarEmpty || searchBarScopeIsFiltering)
+        return (searchController.isActive && !isSearchBarEmpty) || searchBarScopeIsFiltering
     }
     private let scopes: [ScopeItem] = [.all, .events, .screens, .userProperties]
 
@@ -93,6 +92,23 @@ public class LogListViewController: UITableViewController {
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let log = targetLogs[indexPath.row]
+        showAlert(for: log)
+    }
+
+    public override func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    public override func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+        return action == #selector(copy(_:))
+    }
+
+    public override func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) {
+        if action == #selector(copy(_:)) {
+            let log = targetLogs[indexPath.row]
+            UIPasteboard.general.string = log.description
+        }
     }
 }
 
@@ -121,6 +137,7 @@ private extension LogListViewController {
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Filter logs"
         searchController.searchBar.scopeButtonTitles = scopes.map(\.title)
+        searchController.searchBar.showsScopeBar = true
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -203,6 +220,17 @@ private extension LogListViewController {
             }
             return matchesName($0) || matchesValue($0) || matchesParams($0)
         }
+    }
+
+    func showAlert(for log: LogItem) {
+        let alert = UIAlertController(
+            title: log.type.rawValue,
+            message: log.description,
+            preferredStyle: .alert
+        )
+
+        alert.addAction(.init(title: "Ok", style: .default))
+        present(alert, animated: true)
     }
 }
 
