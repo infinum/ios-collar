@@ -10,9 +10,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-* Swift 5.0
+* Swift 5.1
 * Xcode 11.0
-* iOS 10.0
+* iOS 11.0
 
 ## Installation
 
@@ -61,7 +61,7 @@ If you would like to receive notifications when new logs are added to the list, 
 
 ## Author
 
-Filip Gulan, gulan.filip@gmail.com
+Filip Gulan, filip.gulan@infinum.com
 
 ## Credits
 
