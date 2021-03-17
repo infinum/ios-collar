@@ -3,7 +3,7 @@
   "version": "1.0",
   "summary": "In-app analytics debugging tool.",
   "description": "In-app analytics debugging tool.",
-  "homepage": "https://github.com/infinum/ios-analytics-collector",
+  "homepage": "https://github.com/infinum/ios-collar",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,13 +12,13 @@
     "Filip Gulan": "gulan.filip@gmail.com"
   },
   "source": {
-    "git": "https://github.com/infinum/ios-analytics-collector.git",
+    "git": "https://github.com/infinum/ios-collar.git",
     "tag": "1.0"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "swift_versions": "5.3",
+  "swift_versions": "5.1",
   "source_files": "Sources/Collar/Classes/**/*",
   "resource_bundles": {
     "Collar": [
@@ -26,5 +26,5 @@
     ]
   },
   "frameworks": "UIKit",
-  "swift_version": "5.3"
+  "swift_version": "5.1"
 }

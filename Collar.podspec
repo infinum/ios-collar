@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description           = <<-DESC
 In-app analytics debugging tool.
                           DESC
-  s.homepage              = 'https://github.com/infinum/ios-analytics-collector'
+  s.homepage              = 'https://github.com/infinum/ios-collar'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.author                = { 'Filip Gulan' => 'gulan.filip@gmail.com' }
-  s.source                = { :git => 'https://github.com/infinum/ios-analytics-collector.git', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/infinum/ios-collar.git', :tag => s.version.to_s }
   s.platform              = :ios
   s.swift_version         = "5.1"
   s.ios.deployment_target = '11.0'
