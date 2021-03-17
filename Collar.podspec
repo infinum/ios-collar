@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name                  = 'Collar'
   s.version               = '1.0'
-  s.summary               = 'In-app analytics debugging tool.'
+  s.summary               = 'In-app analytics debugging tool'
   s.description           = <<-DESC
-In-app analytics debugging tool.
+                          Collar simplifies analytics debugging by showing events, screen views and user properties of your app as they happen.
                           DESC
   s.homepage              = 'https://github.com/infinum/ios-collar'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
