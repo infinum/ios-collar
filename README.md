@@ -1,8 +1,8 @@
-# AnalyticsCollector
+# Collar
 
-[![Version](https://img.shields.io/cocoapods/v/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
-[![License](https://img.shields.io/cocoapods/l/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
-[![Platform](https://img.shields.io/cocoapods/p/AnalyticsCollector.svg?style=flat)](https://cocoapods.org/pods/AnalyticsCollector)
+[![Version](https://img.shields.io/cocoapods/v/Collar.svg?style=flat)](https://cocoapods.org/pods/Collar)
+[![License](https://img.shields.io/cocoapods/l/Collar.svg?style=flat)](https://cocoapods.org/pods/Collar)
+[![Platform](https://img.shields.io/cocoapods/p/Collar.svg?style=flat)](https://cocoapods.org/pods/Collar)
 
 ## Example
 
@@ -16,18 +16,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-AnalyticsCollector is available through [CocoaPods](https://cocoapods.org). To install
+Collar is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AnalyticsCollector', :git => 'https://github.com/infinum/ios-analytics-collector'
+pod 'Collar', :git => 'https://github.com/infinum/ios-collar'
 ```
 ## Usage
 
 ##### 1. In your analytics manager add support for analytics collecting:
 
 ```swift
-import AnalyticsCollector
+import Collar
 
 // Events
 AnalyticsCollectionManager.shared.log(event: "some_event", parameters: [
@@ -71,4 +71,4 @@ Maintained and sponsored by [Infinum](http://www.infinum.com).
 
 ## License
 
-AnalyticsCollector is available under the MIT license. See the LICENSE file for more info.
+Collar is available under the MIT license. See the LICENSE file for more info.
