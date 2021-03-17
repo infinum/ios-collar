@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UITableViewController {
+public class SettingsViewController: UITableViewController {
 
     // MARK: - IBOutlets
     
@@ -16,7 +16,7 @@ class SettingsViewController: UITableViewController {
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         title = "Settings"
         setupCloseButton()
