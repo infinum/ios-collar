@@ -1,0 +1,6 @@
+framework module Collar {
+  umbrella header "Collar-umbrella.h"
+
+  export *
+  module * { export * }
+}

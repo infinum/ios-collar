@@ -1,16 +1,16 @@
 PODS:
-  - AnalyticsCollector (1.0)
+  - Collar (1.0)
 
 DEPENDENCIES:
-  - AnalyticsCollector (from `../`)
+  - Collar (from `../`)
 
 EXTERNAL SOURCES:
-  AnalyticsCollector:
+  Collar:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AnalyticsCollector: 3e5d3e48edbec1a3cc70c31da65582e414f32dee
+  Collar: affb7cb6474d1fb3bfe92dc63660fc5f9bab75bc
 
-PODFILE CHECKSUM: e14291a17c58aace1d2cd9a7d813f03e0dc1c748
+PODFILE CHECKSUM: f63c9cd9b7ad5419f8287fd3ad3fdff03822c0b4
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

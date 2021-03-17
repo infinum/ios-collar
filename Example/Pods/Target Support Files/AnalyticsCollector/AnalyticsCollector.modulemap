@@ -1,6 +1,0 @@
-module AnalyticsCollector {
-  umbrella header "AnalyticsCollector-umbrella.h"
-
-  export *
-  module * { export * }
-}

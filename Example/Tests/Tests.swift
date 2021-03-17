@@ -1,5 +1,5 @@
 import XCTest
-import AnalyticsCollector
+import Collar
 
 class Tests: XCTestCase {
     

@@ -1,12 +1,11 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
-#use_frameworks!
+use_frameworks!
 
-target 'AnalyticsCollector_Example' do
-  pod 'AnalyticsCollector', :path => '../'
+target 'Collar_Example' do
+  pod 'Collar', :path => '../'
 
-  target 'AnalyticsCollector_Tests' do
+  target 'Collar_Tests' do
     inherit! :search_paths
-
   end
 end

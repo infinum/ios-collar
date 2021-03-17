@@ -7,435 +7,459 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0482D0BBF12E5700CFA67D1869EEE697 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B798546678DE293D1C900F8F1287162 /* Images.xcassets */; };
-		04C989021FFEDB948DDDCF7FA38CF1DF /* Pods-AnalyticsCollector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8098EDA1C117DF99D989BCCF907F6E /* Pods-AnalyticsCollector_Example-dummy.m */; };
-		0E2E258AECA963511DC94DF4033E5797 /* LogHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */; };
-		14F2C7DB4B772033666DFB806443A74A /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */; };
-		415F2A7312E59AABE85BD5C77AF1F857 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */; };
-		4C2DF37138BAD7ABF7DCCDEA32A20801 /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */; };
-		516B8BF44678D32015614FD4A884FEE0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */; };
-		56EF0F365B0B22BBE1C37DD6150BC4F6 /* AnalyticsCollector+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */; };
-		6A6F073F1BEDFE9652D734F921D6F15A /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */; };
-		743B1B4F6A4B9218508A98DB2DD798D3 /* Pods-AnalyticsCollector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42EEF49852C593CF1D24D8368432000 /* Pods-AnalyticsCollector_Tests-dummy.m */; };
-		752E7DB9A4F5D7BC88680AEDBE716950 /* AnalyticsCollector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */; };
-		759310DE2937280C9DCA2C2CE15077E1 /* UITableView+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */; };
-		8BAF0F6CEF27CB30FDD1C42743983FB4 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */; };
-		9AC1AC02F936F1D206FEAD1960827888 /* LogItemPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */; };
-		A41326CD7E4E3732B5C3FD128CF3B078 /* LogItemPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */; };
-		BA026C2BD631AB92ACFF1EE3C31D59EC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */; };
-		BA8B8BB2CEE5CDA0106AAD3EE722D7CD /* AnalyticsCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */; };
-		C9A0BDEA21CEB400D16598D51399CECC /* AnalyticsCollector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F33B2DC8F7AAB9B07A6F82CF85BCA34B /* Pods-AnalyticsCollector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A94C91FC7140632E15F360FBF6E5EE6 /* Pods-AnalyticsCollector_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FE35EE9D0246540D6C37AA3191A9206B /* LogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */; };
+		032A71358E6AF1662BECAC2EE6274935 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */; };
+		088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */; };
+		1343FBC968EED772E18262E0DE159D65 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */; };
+		16FD9D5F80DADA2ADCE30B627545B4B3 /* LogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */; };
+		21F51EE05BC0296B2B28C7008766F049 /* LogItemPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */; };
+		2CE113F9D16171D9812A0DC6EE7D86B8 /* Collar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */; };
+		2F027F6E30C6C479AEC1144AA04EED43 /* Pods-Collar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */; };
+		358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */; };
+		3B231891799EE42EA76DD59AD37188B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4048BCF52F2986F6BC0736609E2E95 /* Images.xcassets */; };
+		4B564716634269B52CB2C58E6344B004 /* Pods-Collar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		529FB42C9D68762C8409B065F554D4C0 /* Collar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8759AE674EB4A2D0BB81C20509C7B136 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		8E028DCAA9C1DFC6C9000EE8E4B14D5A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */; };
+		90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */; };
+		9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */; };
+		9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */; };
+		9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */; };
+		9E77212963AB0A21D6DC60380A5C9629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A84E7E790277350122DA21C8FAE7D972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B637CCDFFB36DFF6E6DCDF4C749049A3 /* Pods-Collar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */; };
+		B6448DAAFEAD371CD2A5465114239605 /* LogItemPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */; };
+		DC28D66EE15AC41C500C266CE32E6A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E518D38691170B91FAC25E00B49F81CC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */; };
+		EDF135ED3EE55536673FDE79A8D0F332 /* Pods-Collar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CB805FAF35E76C80D33283A2B8BE3F /* Pods-Collar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2D2340A50A364F757B55E4B44868A00 /* UITableView+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14C1A8AC367C9AEBF4587E75ED81A69F /* PBXContainerItemProxy */ = {
+		1506AA02562D9C047BB9527D29312BBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 628B221A01B85AB482BFA096F6276E32;
-			remoteInfo = AnalyticsCollector;
+			remoteGlobalIDString = F8BC85724676E63B43E923392BCC3E6D;
+			remoteInfo = "Pods-Collar_Example";
 		};
-		6717A14B5ACB7C8579E698E6497E27B7 /* PBXContainerItemProxy */ = {
+		24D3237656E26CF9E7280BAFF7A62969 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 21013D6F24B3A842AA49F18C52D3356A;
-			remoteInfo = "AnalyticsCollector-AnalyticsCollector";
+			remoteGlobalIDString = D9059A79A14148AD231EF8FEDBA505A1;
+			remoteInfo = "Collar-Collar";
 		};
-		937D405DD5B784782E8DFF2F2F2C400C /* PBXContainerItemProxy */ = {
+		42BD38CA2BEFB9667802DE59D580AF42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 531407D4542C8FB163D6DEA25F8EE92A;
-			remoteInfo = "Pods-AnalyticsCollector_Example";
+			remoteGlobalIDString = EB8A7652AF0F5072321AF388A5C1AC02;
+			remoteInfo = Collar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06707876FC0FC7DBFD54397A01DB154E /* libAnalyticsCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAnalyticsCollector.a; path = libAnalyticsCollector.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		109EC18851970CC81E7FCA7981281ABD /* Pods-AnalyticsCollector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnalyticsCollector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
-		1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogItemPopupView.xib; path = Sources/AnalyticsCollector/Assets/LogItemPopupView.xib; sourceTree = "<group>"; };
-		316D1B01FB4D65D2E3B314EC74BE660F /* Pods-AnalyticsCollector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnalyticsCollector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		35B9FB87188550A85BD2AECB2C146ACC /* AnalyticsCollector.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AnalyticsCollector.bundle; path = "AnalyticsCollector-AnalyticsCollector.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3727BC221D09273EE806963897223A22 /* Pods-AnalyticsCollector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnalyticsCollector_Example.modulemap"; sourceTree = "<group>"; };
-		3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/AnalyticsCollector/Assets/Settings.storyboard; sourceTree = "<group>"; };
-		49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.release.xcconfig; sourceTree = "<group>"; };
-		4A94C91FC7140632E15F360FBF6E5EE6 /* Pods-AnalyticsCollector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnalyticsCollector_Example-umbrella.h"; sourceTree = "<group>"; };
-		4B3336D58CD92E0C8F72B2C48DFED2E6 /* Pods-AnalyticsCollector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnalyticsCollector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F7B3806863E4812D90A2ACEE9A8497B /* Pods-AnalyticsCollector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Example.release.xcconfig"; sourceTree = "<group>"; };
-		55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
-		5E2E5FDFB024710A13641D8543F9FE0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupView.swift; sourceTree = "<group>"; };
-		6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnalyticsCollector.debug.xcconfig; sourceTree = "<group>"; };
-		6DA4160FD2EFDCB9806A8C6C75CFEAF7 /* libPods-AnalyticsCollector_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AnalyticsCollector_Example.a"; path = "libPods-AnalyticsCollector_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74081504A0A1C8FC235F2762AE21BE4C /* AnalyticsCollector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnalyticsCollector.modulemap; sourceTree = "<group>"; };
-		7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = Sources/AnalyticsCollector/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
-		76B361AC536752304F2B3B15EB6389E1 /* Pods-AnalyticsCollector_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnalyticsCollector_Example-resources.sh"; sourceTree = "<group>"; };
-		7B798546678DE293D1C900F8F1287162 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/AnalyticsCollector/Assets/Images.xcassets; sourceTree = "<group>"; };
-		7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
-		8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
-		8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
-		8E0E363F4D1BF208D3DCC45C5E8F9D6F /* Pods-AnalyticsCollector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Collar.bundle; path = "Collar-Collar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = Sources/Collar/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
+		11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Tests-dummy.m"; sourceTree = "<group>"; };
+		1B2DF38EB07E712F12EF2F264329AE3C /* Pods-Collar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Collar_Example.modulemap"; sourceTree = "<group>"; };
+		20B258528A665531BD973ADD896ADE73 /* ResourceBundle-Collar-Collar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Collar-Collar-Info.plist"; sourceTree = "<group>"; };
+		25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupQueue.swift; sourceTree = "<group>"; };
+		2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogItemPopupView.xib; path = Sources/Collar/Assets/LogItemPopupView.xib; sourceTree = "<group>"; };
+		2C327C30EE31CE7E5864A19764BDB2F3 /* Collar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Collar-Info.plist"; sourceTree = "<group>"; };
+		3B2B349E20F4B33D76FA660EBC54BEC0 /* Pods-Collar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
+		49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4AE5E8FEFEA903DB7D7D8BAAA4396CD2 /* Pods-Collar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Example-Info.plist"; sourceTree = "<group>"; };
+		5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Collar.release.xcconfig; sourceTree = "<group>"; };
+		5B4048BCF52F2986F6BC0736609E2E95 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/Collar/Assets/Images.xcassets; sourceTree = "<group>"; };
+		5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Collar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5BEDE8606775CE03CA9B00D00C014029 /* Pods-Collar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Collar_Tests.modulemap"; sourceTree = "<group>"; };
+		65B31FC7D50F636D0C421C0C8D0AF416 /* Pods-Collar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
+		70CB805FAF35E76C80D33283A2B8BE3F /* Pods-Collar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Collar_Example-umbrella.h"; sourceTree = "<group>"; };
+		72E5EB0EE78D65186A3CB2C170361771 /* Collar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-prefix.pch"; sourceTree = "<group>"; };
+		93E2002A37A270E12BE23EF58C03345D /* Pods-Collar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupView.swift; sourceTree = "<group>"; };
+		98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-Info.plist"; sourceTree = "<group>"; };
+		98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Example-dummy.m"; sourceTree = "<group>"; };
+		9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E33E9088BA018199DF98847D57C2554 /* Pods-AnalyticsCollector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A24C07A062D0A90661512D8138219402 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A295715B3108875E609254B786CE4239 /* AnalyticsCollector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AnalyticsCollector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "AnalyticsCollector+UI.swift"; sourceTree = "<group>"; };
-		AC8098EDA1C117DF99D989BCCF907F6E /* Pods-AnalyticsCollector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnalyticsCollector_Example-dummy.m"; sourceTree = "<group>"; };
-		AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-umbrella.h"; sourceTree = "<group>"; };
-		B2657CDFB802ECFB36250DE096C1511B /* Pods-AnalyticsCollector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnalyticsCollector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B4603607D75149C144BBE2D8930D7D8B /* AnalyticsCollector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnalyticsCollector-prefix.pch"; sourceTree = "<group>"; };
-		B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
-		C42EEF49852C593CF1D24D8368432000 /* Pods-AnalyticsCollector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnalyticsCollector_Tests-dummy.m"; sourceTree = "<group>"; };
-		C6D82D424526223445B62D337FA2C48F /* libPods-AnalyticsCollector_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AnalyticsCollector_Tests.a"; path = "libPods-AnalyticsCollector_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA0E90AB486D7EA179144F6945C7E188 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist"; sourceTree = "<group>"; };
-		D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnalyticsCollector-dummy.m"; sourceTree = "<group>"; };
-		EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupQueue.swift; sourceTree = "<group>"; };
-		EF9D3274C855E5279E932F6AADFAAA2A /* Pods-AnalyticsCollector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnalyticsCollector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
+		9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/Collar/Assets/Settings.storyboard; sourceTree = "<group>"; };
+		A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Collar.modulemap; sourceTree = "<group>"; };
+		B51542C4CB84D48E8B3B85240383085A /* Pods-Collar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Collar_Tests.framework; path = "Pods-Collar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Collar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Collar.framework; path = Collar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AA3D718701AC63A37696AD5B68B9B8 /* Pods-Collar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Collar.debug.xcconfig; sourceTree = "<group>"; };
+		E2A8593F53E9FAA35434A84BB88C9437 /* Pods-Collar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Collar_Example.framework; path = "Pods-Collar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D13A91F71C3138D09185575F037016 /* Pods-Collar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collar+UI.swift"; sourceTree = "<group>"; };
+		E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F2301AF23B138FF2C5E86E14EE6992AC /* Pods-Collar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Collar_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F70D714E6646FB69DE3C4CF7F563E6CF /* Pods-Collar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
+		FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Collar-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A22E2CC1998166AB9827ADACBC8BC83D /* Frameworks */ = {
+		078264E4ED49CFEEAB7301E9EFE886EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E77212963AB0A21D6DC60380A5C9629 /* Foundation.framework in Frameworks */,
+				8759AE674EB4A2D0BB81C20509C7B136 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CB40D721D50B5B9AEECBD02AAD90B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9DE48C516C49413EC006B0F1623F049 /* Frameworks */ = {
+		5C831EBEA8A873713745FF4C2E9FB4A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC28D66EE15AC41C500C266CE32E6A9C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCEBA2A9C743CDFFA8A8677FAE05E7A1 /* Frameworks */ = {
+		6C91E93B15E76E4A8F75CBFAF46D508F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBCEA8A83BFDFBAED4282EFBE5F42364 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A84E7E790277350122DA21C8FAE7D972 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D3E4BEECD8664AB4E03103AF2A1D485 /* Resources */ = {
+		00BAE85651E47B3967DA33EC9B44BDDD /* Pods-Collar_Example */ = {
 			isa = PBXGroup;
 			children = (
-				7B798546678DE293D1C900F8F1287162 /* Images.xcassets */,
-				244E3FDCCF77592E0D978E860464D75C /* LogItemPopupView.xib */,
-				7504A1E56C3CDDCCE78818CEE53B78F7 /* LogTableViewCell.xib */,
-				3ED836955BBF37D58A635F931CE42F35 /* Settings.storyboard */,
+				1B2DF38EB07E712F12EF2F264329AE3C /* Pods-Collar_Example.modulemap */,
+				B51542C4CB84D48E8B3B85240383085A /* Pods-Collar_Example-acknowledgements.markdown */,
+				93E2002A37A270E12BE23EF58C03345D /* Pods-Collar_Example-acknowledgements.plist */,
+				98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */,
+				F2301AF23B138FF2C5E86E14EE6992AC /* Pods-Collar_Example-frameworks.sh */,
+				4AE5E8FEFEA903DB7D7D8BAAA4396CD2 /* Pods-Collar_Example-Info.plist */,
+				70CB805FAF35E76C80D33283A2B8BE3F /* Pods-Collar_Example-umbrella.h */,
+				E4D13A91F71C3138D09185575F037016 /* Pods-Collar_Example.debug.xcconfig */,
+				65B31FC7D50F636D0C421C0C8D0AF416 /* Pods-Collar_Example.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Pods-Collar_Example";
+			path = "Target Support Files/Pods-Collar_Example";
 			sourceTree = "<group>";
 		};
-		1170A77A65E26CA5259FC3AE06DCCE20 /* View */ = {
+		0C764ABA6FA35D061AF985550F36E921 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6CD3579804366A31F69D6B7484BFE0D0 /* LogItemPopupView.swift */,
-			);
-			name = View;
-			path = View;
-			sourceTree = "<group>";
-		};
-		2B99D66D3C4AE8578727D7E38F10A97F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A85C89617E0A3081CCFA268D7A6355A /* Pods-AnalyticsCollector_Example */,
-				5C879C1BB424FFC017FD05DB8B343A53 /* Pods-AnalyticsCollector_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2C567C39F8DDCCB395285AC0421CDFC1 /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-				EB9ABAD5AFC8015DC90970C687C110B0 /* LogItemPopupQueue.swift */,
-				1170A77A65E26CA5259FC3AE06DCCE20 /* View */,
-			);
-			name = Popup;
-			path = Sources/AnalyticsCollector/Classes/Popup;
-			sourceTree = "<group>";
-		};
-		42F508D7A101FDCF700C860D8947B092 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				932145216A2F7271F7AA348B12A96AB3 /* AnalyticsCollector */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5C879C1BB424FFC017FD05DB8B343A53 /* Pods-AnalyticsCollector_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				316D1B01FB4D65D2E3B314EC74BE660F /* Pods-AnalyticsCollector_Tests-acknowledgements.markdown */,
-				109EC18851970CC81E7FCA7981281ABD /* Pods-AnalyticsCollector_Tests-acknowledgements.plist */,
-				C42EEF49852C593CF1D24D8368432000 /* Pods-AnalyticsCollector_Tests-dummy.m */,
-				EF9D3274C855E5279E932F6AADFAAA2A /* Pods-AnalyticsCollector_Tests.debug.xcconfig */,
-				8E0E363F4D1BF208D3DCC45C5E8F9D6F /* Pods-AnalyticsCollector_Tests.release.xcconfig */,
-			);
-			name = "Pods-AnalyticsCollector_Tests";
-			path = "Target Support Files/Pods-AnalyticsCollector_Tests";
-			sourceTree = "<group>";
-		};
-		8B503BD9E659E386DA5CC93A4A596CAE /* List */ = {
-			isa = PBXGroup;
-			children = (
-				175B54F8FAAA1941C09E107BBD7EB679 /* LogListViewController.swift */,
-				FAD46EC7787D45CAC3C413ED1473DA7B /* Cell */,
-				ABB46D81E12A19BC2B5DEFAE37AB910C /* Views */,
-			);
-			name = List;
-			path = Sources/AnalyticsCollector/Classes/List;
-			sourceTree = "<group>";
-		};
-		932145216A2F7271F7AA348B12A96AB3 /* AnalyticsCollector */ = {
-			isa = PBXGroup;
-			children = (
-				B6410836FF8D67955800649097AB0A5D /* Collector */,
-				A32B92FC765482D59EED3FA205267464 /* Common */,
-				8B503BD9E659E386DA5CC93A4A596CAE /* List */,
-				A77534464364E828DA82E112A18EE173 /* Pod */,
-				2C567C39F8DDCCB395285AC0421CDFC1 /* Popup */,
-				0D3E4BEECD8664AB4E03103AF2A1D485 /* Resources */,
-				E2861A6091A52810C9F73E665CDE4556 /* Settings */,
-				B82DF1EA6C8BD373EB635E8A96135CFD /* Support Files */,
-			);
-			name = AnalyticsCollector;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9A85C89617E0A3081CCFA268D7A6355A /* Pods-AnalyticsCollector_Example */ = {
-			isa = PBXGroup;
-			children = (
-				3727BC221D09273EE806963897223A22 /* Pods-AnalyticsCollector_Example.modulemap */,
-				B2657CDFB802ECFB36250DE096C1511B /* Pods-AnalyticsCollector_Example-acknowledgements.markdown */,
-				4B3336D58CD92E0C8F72B2C48DFED2E6 /* Pods-AnalyticsCollector_Example-acknowledgements.plist */,
-				AC8098EDA1C117DF99D989BCCF907F6E /* Pods-AnalyticsCollector_Example-dummy.m */,
-				76B361AC536752304F2B3B15EB6389E1 /* Pods-AnalyticsCollector_Example-resources.sh */,
-				4A94C91FC7140632E15F360FBF6E5EE6 /* Pods-AnalyticsCollector_Example-umbrella.h */,
-				9E33E9088BA018199DF98847D57C2554 /* Pods-AnalyticsCollector_Example.debug.xcconfig */,
-				4F7B3806863E4812D90A2ACEE9A8497B /* Pods-AnalyticsCollector_Example.release.xcconfig */,
-			);
-			name = "Pods-AnalyticsCollector_Example";
-			path = "Target Support Files/Pods-AnalyticsCollector_Example";
-			sourceTree = "<group>";
-		};
-		9DB45811F68842DCF075FA9E800A39C7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				35B9FB87188550A85BD2AECB2C146ACC /* AnalyticsCollector.bundle */,
-				06707876FC0FC7DBFD54397A01DB154E /* libAnalyticsCollector.a */,
-				6DA4160FD2EFDCB9806A8C6C75CFEAF7 /* libPods-AnalyticsCollector_Example.a */,
-				C6D82D424526223445B62D337FA2C48F /* libPods-AnalyticsCollector_Tests.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A32B92FC765482D59EED3FA205267464 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F12F404201E4E9E87DB3BD0B81098402 /* Bundle+Framework.swift */,
-				8A0F375C3329C1B387655350D1BF2FBF /* UITableView+Reuse.swift */,
-				B9D280FAE534041F0B7F213EE0A147C8 /* UIView+LayoutGuide.swift */,
-			);
-			name = Common;
-			path = Sources/AnalyticsCollector/Classes/Common;
-			sourceTree = "<group>";
-		};
-		A77534464364E828DA82E112A18EE173 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A295715B3108875E609254B786CE4239 /* AnalyticsCollector.podspec */,
-				5E2E5FDFB024710A13641D8543F9FE0F /* LICENSE */,
-				A24C07A062D0A90661512D8138219402 /* README.md */,
+				5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */,
+				FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */,
+				49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		ABB46D81E12A19BC2B5DEFAE37AB910C /* Views */ = {
+		10DF97F905B019C5BFADC2104FB7CC73 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				55721A67445FD61FAC4A63AE6D339413 /* LogHeaderFooterView.swift */,
+				12F66A92E65F72FE7F5F87D7CEDB4B20 /* Collar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		12F66A92E65F72FE7F5F87D7CEDB4B20 /* Collar */ = {
+			isa = PBXGroup;
+			children = (
+				5B4048BCF52F2986F6BC0736609E2E95 /* Images.xcassets */,
+				2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */,
+				0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */,
+				9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */,
+				F2CDD86FB886700EE3DE4F027EB9A943 /* Collar */,
+				A37EC543161E505A089DC4BEB6D07162 /* Common */,
+				8D3DD7E4DFDF02F624F32EAA923956AE /* List */,
+				0C764ABA6FA35D061AF985550F36E921 /* Pod */,
+				85F21FDA6E88E73DC586D1A32F9D974F /* Popup */,
+				1FD03C5C8DF60F33E2D37B0A5C67C8F4 /* Settings */,
+				D5A5FE46643CE2AF72BA4DFCD636BCB4 /* Support Files */,
+			);
+			name = Collar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D15C1267A570F33EB711F43B2D75A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */,
+				C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */,
+				E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */,
+				BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FD03C5C8DF60F33E2D37B0A5C67C8F4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			path = Sources/Collar/Classes/Settings;
+			sourceTree = "<group>";
+		};
+		2FBAE393F39950844B7E05999588971B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */,
 			);
 			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B6410836FF8D67955800649097AB0A5D /* Collector */ = {
+		3090D09975F5601E64043AA4F4495A2B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A6A0F760977266A96F374E5BEF67EB8 /* AnalyticsCollectionManager.swift */,
-				A3F641B9D2B53DD23CE4D3FFFCEAB2F9 /* AnalyticsCollector+UI.swift */,
+				00BAE85651E47B3967DA33EC9B44BDDD /* Pods-Collar_Example */,
+				E7D06D83613BC3F4B9C68756107A3108 /* Pods-Collar_Tests */,
 			);
-			name = Collector;
-			path = Sources/AnalyticsCollector/Classes/Collector;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B82DF1EA6C8BD373EB635E8A96135CFD /* Support Files */ = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				74081504A0A1C8FC235F2762AE21BE4C /* AnalyticsCollector.modulemap */,
-				D8DDDA192A761F8B375896D8D0DBE4E1 /* AnalyticsCollector-dummy.m */,
-				B4603607D75149C144BBE2D8930D7D8B /* AnalyticsCollector-prefix.pch */,
-				AD9BB4570492B6E89CB86F515FD6E61A /* AnalyticsCollector-umbrella.h */,
-				6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */,
-				49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */,
-				CA0E90AB486D7EA179144F6945C7E188 /* ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AnalyticsCollector";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6E2A3840EA30DD3B73D4EC74BE50BA18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		85F21FDA6E88E73DC586D1A32F9D974F /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */,
+				6E2A3840EA30DD3B73D4EC74BE50BA18 /* View */,
+			);
+			name = Popup;
+			path = Sources/Collar/Classes/Popup;
+			sourceTree = "<group>";
+		};
+		8D3DD7E4DFDF02F624F32EAA923956AE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */,
+				D3ADA3DD8D3929E91C543CE1C608E3A5 /* Cell */,
+				2FBAE393F39950844B7E05999588971B /* Views */,
+			);
+			name = List;
+			path = Sources/Collar/Classes/List;
+			sourceTree = "<group>";
+		};
+		A37EC543161E505A089DC4BEB6D07162 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */,
+				F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */,
+			);
+			name = Common;
+			path = Sources/Collar/Classes/Common;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				42F508D7A101FDCF700C860D8947B092 /* Development Pods */,
-				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				9DB45811F68842DCF075FA9E800A39C7 /* Products */,
-				2B99D66D3C4AE8578727D7E38F10A97F /* Targets Support Files */,
+				10DF97F905B019C5BFADC2104FB7CC73 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				1D15C1267A570F33EB711F43B2D75A70 /* Products */,
+				3090D09975F5601E64043AA4F4495A2B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+		D3ADA3DD8D3929E91C543CE1C608E3A5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E2861A6091A52810C9F73E665CDE4556 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				1D331B94428A3479855C0CF9FE5912DC /* SettingsViewController.swift */,
-			);
-			name = Settings;
-			path = Sources/AnalyticsCollector/Classes/Settings;
-			sourceTree = "<group>";
-		};
-		FAD46EC7787D45CAC3C413ED1473DA7B /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7CA620C2D1B5206F1A3D0E905E3972D6 /* LogTableViewCell.swift */,
+				11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */,
 			);
 			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D5A5FE46643CE2AF72BA4DFCD636BCB4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */,
+				FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */,
+				2C327C30EE31CE7E5864A19764BDB2F3 /* Collar-Info.plist */,
+				72E5EB0EE78D65186A3CB2C170361771 /* Collar-prefix.pch */,
+				9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */,
+				DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */,
+				5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */,
+				20B258528A665531BD973ADD896ADE73 /* ResourceBundle-Collar-Collar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Collar";
+			sourceTree = "<group>";
+		};
+		E7D06D83613BC3F4B9C68756107A3108 /* Pods-Collar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5BEDE8606775CE03CA9B00D00C014029 /* Pods-Collar_Tests.modulemap */,
+				3B2B349E20F4B33D76FA660EBC54BEC0 /* Pods-Collar_Tests-acknowledgements.markdown */,
+				F70D714E6646FB69DE3C4CF7F563E6CF /* Pods-Collar_Tests-acknowledgements.plist */,
+				1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */,
+				98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */,
+				C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */,
+				C6AA3D718701AC63A37696AD5B68B9B8 /* Pods-Collar_Tests.debug.xcconfig */,
+				E2A8593F53E9FAA35434A84BB88C9437 /* Pods-Collar_Tests.release.xcconfig */,
+			);
+			name = "Pods-Collar_Tests";
+			path = "Target Support Files/Pods-Collar_Tests";
+			sourceTree = "<group>";
+		};
+		F2CDD86FB886700EE3DE4F027EB9A943 /* Collar */ = {
+			isa = PBXGroup;
+			children = (
+				3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */,
+				E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */,
+			);
+			name = Collar;
+			path = Sources/Collar/Classes/Collar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		337694A4E4455371DE8F262997F5F784 /* Headers */ = {
+		30D77B33CA7A471EACD85DCC9F449C40 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33B2DC8F7AAB9B07A6F82CF85BCA34B /* Pods-AnalyticsCollector_Example-umbrella.h in Headers */,
+				529FB42C9D68762C8409B065F554D4C0 /* Collar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		974933CDC5FB419F19EF2171D1228761 /* Headers */ = {
+		D9E58ABDCBAF4AA571D021248B10CA39 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A0BDEA21CEB400D16598D51399CECC /* AnalyticsCollector-umbrella.h in Headers */,
+				4B564716634269B52CB2C58E6344B004 /* Pods-Collar_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAE5EB7DE9B48F07A532E15024607B94 /* Headers */ = {
+		E6EAFF5CA31EE6B0BA02E053E2079CA9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF135ED3EE55536673FDE79A8D0F332 /* Pods-Collar_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21013D6F24B3A842AA49F18C52D3356A /* AnalyticsCollector-AnalyticsCollector */ = {
+		1C0EAAAEB4E8CA98F8187A18907856DC /* Pods-Collar_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7026350588BAAD262CF6DB1D840A34A8 /* Build configuration list for PBXNativeTarget "AnalyticsCollector-AnalyticsCollector" */;
+			buildConfigurationList = 35E753DAD2A07865454477C343E7915E /* Build configuration list for PBXNativeTarget "Pods-Collar_Tests" */;
 			buildPhases = (
-				46AF56033A96B1C8984703DDB1B9A208 /* Sources */,
-				A22E2CC1998166AB9827ADACBC8BC83D /* Frameworks */,
-				680D2AB2773CFAD52A63E2B9D47026A6 /* Resources */,
+				D9E58ABDCBAF4AA571D021248B10CA39 /* Headers */,
+				18BD184A329548ECB98F720743E89E72 /* Sources */,
+				5C831EBEA8A873713745FF4C2E9FB4A2 /* Frameworks */,
+				587EC96AC5A91CD4B066E181450C4F53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB0C6D825097150FF645605ECAF3C38 /* PBXTargetDependency */,
+			);
+			name = "Pods-Collar_Tests";
+			productName = "Pods-Collar_Tests";
+			productReference = BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9059A79A14148AD231EF8FEDBA505A1 /* Collar-Collar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C8308786F5563B115AD3249783B2EB /* Build configuration list for PBXNativeTarget "Collar-Collar" */;
+			buildPhases = (
+				FA4FB43060229C10DDBC6AC37295245F /* Sources */,
+				20CB40D721D50B5B9AEECBD02AAD90B7 /* Frameworks */,
+				9C4E806E6EEA23D548A6E6F64BA11EA3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "AnalyticsCollector-AnalyticsCollector";
-			productName = "AnalyticsCollector-AnalyticsCollector";
-			productReference = 35B9FB87188550A85BD2AECB2C146ACC /* AnalyticsCollector.bundle */;
+			name = "Collar-Collar";
+			productName = "Collar-Collar";
+			productReference = 0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		531407D4542C8FB163D6DEA25F8EE92A /* Pods-AnalyticsCollector_Example */ = {
+		EB8A7652AF0F5072321AF388A5C1AC02 /* Collar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3DBE8B31FC8C6E11326AA51FBB66680 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsCollector_Example" */;
+			buildConfigurationList = A32609E2A84EC6B64644D987783A2F57 /* Build configuration list for PBXNativeTarget "Collar" */;
 			buildPhases = (
-				337694A4E4455371DE8F262997F5F784 /* Headers */,
-				8BB7079413D00B8C1995EAA8135FAB72 /* Sources */,
-				A9DE48C516C49413EC006B0F1623F049 /* Frameworks */,
+				30D77B33CA7A471EACD85DCC9F449C40 /* Headers */,
+				4A33C62ACD5D430AE849701DC74D849A /* Sources */,
+				078264E4ED49CFEEAB7301E9EFE886EE /* Frameworks */,
+				89F14233465B52D1CB31166C32938608 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6B65E79BFD16F2CB07F7D9AE9123ABFB /* PBXTargetDependency */,
+				240FA47D5467F2F733C4183F8037BD10 /* PBXTargetDependency */,
 			);
-			name = "Pods-AnalyticsCollector_Example";
-			productName = "Pods-AnalyticsCollector_Example";
-			productReference = 6DA4160FD2EFDCB9806A8C6C75CFEAF7 /* libPods-AnalyticsCollector_Example.a */;
-			productType = "com.apple.product-type.library.static";
+			name = Collar;
+			productName = Collar;
+			productReference = C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		628B221A01B85AB482BFA096F6276E32 /* AnalyticsCollector */ = {
+		F8BC85724676E63B43E923392BCC3E6D /* Pods-Collar_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C999D37E9167C01DA6A316ACE64E5C5D /* Build configuration list for PBXNativeTarget "AnalyticsCollector" */;
+			buildConfigurationList = C206C91AF24C39D242FE0C859434EA83 /* Build configuration list for PBXNativeTarget "Pods-Collar_Example" */;
 			buildPhases = (
-				974933CDC5FB419F19EF2171D1228761 /* Headers */,
-				73215BDF004318F944CD15E28E5C90EB /* Sources */,
-				BCEBA2A9C743CDFFA8A8677FAE05E7A1 /* Frameworks */,
-				4637D355423F265DA52AD62BD4B2BA43 /* Copy generated compatibility header */,
+				E6EAFF5CA31EE6B0BA02E053E2079CA9 /* Headers */,
+				0CC667A9654D4774C4CD1F8519C6F0AE /* Sources */,
+				6C91E93B15E76E4A8F75CBFAF46D508F /* Frameworks */,
+				788DAA66ACF68474A25B6CC98CD0379A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0F024C7BA6E4A5DF8153E0AA2E06D52 /* PBXTargetDependency */,
+				C4682AB3587629644F4DF1D3D47C08F1 /* PBXTargetDependency */,
 			);
-			name = AnalyticsCollector;
-			productName = AnalyticsCollector;
-			productReference = 06707876FC0FC7DBFD54397A01DB154E /* libAnalyticsCollector.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		925F267AE0A8569EF1401738AF9B09A5 /* Pods-AnalyticsCollector_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8DAED39D7B7C62005B2CB3BA6C1A124 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsCollector_Tests" */;
-			buildPhases = (
-				CAE5EB7DE9B48F07A532E15024607B94 /* Headers */,
-				6FA9C138B5DE8135625DF8A94DA091AD /* Sources */,
-				EBCEA8A83BFDFBAED4282EFBE5F42364 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D29DF71F6878236A8E56137146A28130 /* PBXTargetDependency */,
-			);
-			name = "Pods-AnalyticsCollector_Tests";
-			productName = "Pods-AnalyticsCollector_Tests";
-			productReference = C6D82D424526223445B62D337FA2C48F /* libPods-AnalyticsCollector_Tests.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-Collar_Example";
+			productName = "Pods-Collar_Example";
+			productReference = E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -455,136 +479,263 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9DB45811F68842DCF075FA9E800A39C7 /* Products */;
+			productRefGroup = 1D15C1267A570F33EB711F43B2D75A70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				628B221A01B85AB482BFA096F6276E32 /* AnalyticsCollector */,
-				21013D6F24B3A842AA49F18C52D3356A /* AnalyticsCollector-AnalyticsCollector */,
-				531407D4542C8FB163D6DEA25F8EE92A /* Pods-AnalyticsCollector_Example */,
-				925F267AE0A8569EF1401738AF9B09A5 /* Pods-AnalyticsCollector_Tests */,
+				EB8A7652AF0F5072321AF388A5C1AC02 /* Collar */,
+				D9059A79A14148AD231EF8FEDBA505A1 /* Collar-Collar */,
+				F8BC85724676E63B43E923392BCC3E6D /* Pods-Collar_Example */,
+				1C0EAAAEB4E8CA98F8187A18907856DC /* Pods-Collar_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		680D2AB2773CFAD52A63E2B9D47026A6 /* Resources */ = {
+		587EC96AC5A91CD4B066E181450C4F53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0482D0BBF12E5700CFA67D1869EEE697 /* Images.xcassets in Resources */,
-				9AC1AC02F936F1D206FEAD1960827888 /* LogItemPopupView.xib in Resources */,
-				4C2DF37138BAD7ABF7DCCDEA32A20801 /* LogTableViewCell.xib in Resources */,
-				BA026C2BD631AB92ACFF1EE3C31D59EC /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788DAA66ACF68474A25B6CC98CD0379A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89F14233465B52D1CB31166C32938608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE113F9D16171D9812A0DC6EE7D86B8 /* Collar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4E806E6EEA23D548A6E6F64BA11EA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B231891799EE42EA76DD59AD37188B0 /* Images.xcassets in Resources */,
+				21F51EE05BC0296B2B28C7008766F049 /* LogItemPopupView.xib in Resources */,
+				9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */,
+				E518D38691170B91FAC25E00B49F81CC /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4637D355423F265DA52AD62BD4B2BA43 /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/AnalyticsCollector/AnalyticsCollector.modulemap",
-				"${PODS_ROOT}/Headers/Public/AnalyticsCollector/AnalyticsCollector-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/AnalyticsCollector-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AnalyticsCollector/AnalyticsCollector.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AnalyticsCollector/AnalyticsCollector-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		46AF56033A96B1C8984703DDB1B9A208 /* Sources */ = {
+		0CC667A9654D4774C4CD1F8519C6F0AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F027F6E30C6C479AEC1144AA04EED43 /* Pods-Collar_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FA9C138B5DE8135625DF8A94DA091AD /* Sources */ = {
+		18BD184A329548ECB98F720743E89E72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				743B1B4F6A4B9218508A98DB2DD798D3 /* Pods-AnalyticsCollector_Tests-dummy.m in Sources */,
+				B637CCDFFB36DFF6E6DCDF4C749049A3 /* Pods-Collar_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73215BDF004318F944CD15E28E5C90EB /* Sources */ = {
+		4A33C62ACD5D430AE849701DC74D849A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8B8BB2CEE5CDA0106AAD3EE722D7CD /* AnalyticsCollectionManager.swift in Sources */,
-				56EF0F365B0B22BBE1C37DD6150BC4F6 /* AnalyticsCollector+UI.swift in Sources */,
-				752E7DB9A4F5D7BC88680AEDBE716950 /* AnalyticsCollector-dummy.m in Sources */,
-				8BAF0F6CEF27CB30FDD1C42743983FB4 /* Bundle+Framework.swift in Sources */,
-				0E2E258AECA963511DC94DF4033E5797 /* LogHeaderFooterView.swift in Sources */,
-				14F2C7DB4B772033666DFB806443A74A /* LogItemPopupQueue.swift in Sources */,
-				A41326CD7E4E3732B5C3FD128CF3B078 /* LogItemPopupView.swift in Sources */,
-				FE35EE9D0246540D6C37AA3191A9206B /* LogListViewController.swift in Sources */,
-				415F2A7312E59AABE85BD5C77AF1F857 /* LogTableViewCell.swift in Sources */,
-				516B8BF44678D32015614FD4A884FEE0 /* SettingsViewController.swift in Sources */,
-				759310DE2937280C9DCA2C2CE15077E1 /* UITableView+Reuse.swift in Sources */,
-				6A6F073F1BEDFE9652D734F921D6F15A /* UIView+LayoutGuide.swift in Sources */,
+				358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */,
+				032A71358E6AF1662BECAC2EE6274935 /* Bundle+Framework.swift in Sources */,
+				9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */,
+				088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */,
+				90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */,
+				9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */,
+				B6448DAAFEAD371CD2A5465114239605 /* LogItemPopupView.swift in Sources */,
+				16FD9D5F80DADA2ADCE30B627545B4B3 /* LogListViewController.swift in Sources */,
+				1343FBC968EED772E18262E0DE159D65 /* LogTableViewCell.swift in Sources */,
+				8E028DCAA9C1DFC6C9000EE8E4B14D5A /* SettingsViewController.swift in Sources */,
+				F2D2340A50A364F757B55E4B44868A00 /* UITableView+Reuse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BB7079413D00B8C1995EAA8135FAB72 /* Sources */ = {
+		FA4FB43060229C10DDBC6AC37295245F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C989021FFEDB948DDDCF7FA38CF1DF /* Pods-AnalyticsCollector_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6B65E79BFD16F2CB07F7D9AE9123ABFB /* PBXTargetDependency */ = {
+		240FA47D5467F2F733C4183F8037BD10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AnalyticsCollector;
-			target = 628B221A01B85AB482BFA096F6276E32 /* AnalyticsCollector */;
-			targetProxy = 14C1A8AC367C9AEBF4587E75ED81A69F /* PBXContainerItemProxy */;
+			name = "Collar-Collar";
+			target = D9059A79A14148AD231EF8FEDBA505A1 /* Collar-Collar */;
+			targetProxy = 24D3237656E26CF9E7280BAFF7A62969 /* PBXContainerItemProxy */;
 		};
-		D29DF71F6878236A8E56137146A28130 /* PBXTargetDependency */ = {
+		4FB0C6D825097150FF645605ECAF3C38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-AnalyticsCollector_Example";
-			target = 531407D4542C8FB163D6DEA25F8EE92A /* Pods-AnalyticsCollector_Example */;
-			targetProxy = 937D405DD5B784782E8DFF2F2F2C400C /* PBXContainerItemProxy */;
+			name = "Pods-Collar_Example";
+			target = F8BC85724676E63B43E923392BCC3E6D /* Pods-Collar_Example */;
+			targetProxy = 1506AA02562D9C047BB9527D29312BBE /* PBXContainerItemProxy */;
 		};
-		E0F024C7BA6E4A5DF8153E0AA2E06D52 /* PBXTargetDependency */ = {
+		C4682AB3587629644F4DF1D3D47C08F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "AnalyticsCollector-AnalyticsCollector";
-			target = 21013D6F24B3A842AA49F18C52D3356A /* AnalyticsCollector-AnalyticsCollector */;
-			targetProxy = 6717A14B5ACB7C8579E698E6497E27B7 /* PBXContainerItemProxy */;
+			name = Collar;
+			target = EB8A7652AF0F5072321AF388A5C1AC02 /* Collar */;
+			targetProxy = 42BD38CA2BEFB9667802DE59D580AF42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0242F0F0353AE19DC038E6E691AAAED6 /* Debug */ = {
+		0ACF194D631BB12CF8A27E926C2EA22D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */;
+			baseConfigurationReference = DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AnalyticsCollector";
-				IBSC_MODULE = AnalyticsCollector;
-				INFOPLIST_FILE = "Target Support Files/AnalyticsCollector/ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = AnalyticsCollector;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Collar/Collar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Collar/Collar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Collar/Collar.modulemap";
+				PRODUCT_MODULE_NAME = Collar;
+				PRODUCT_NAME = Collar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EBDB30498AB66FB0F4C7EA7B21E3761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D13A91F71C3138D09185575F037016 /* Pods-Collar_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3EFD806B490B6CE549AA14F568D11D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A8593F53E9FAA35434A84BB88C9437 /* Pods-Collar_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C320A8DB7FCBD81BFF31AC497F6B3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Collar/Collar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Collar/Collar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Collar/Collar.modulemap";
+				PRODUCT_MODULE_NAME = Collar;
+				PRODUCT_NAME = Collar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B57833541C3A7923E39168D2650F3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Collar";
+				IBSC_MODULE = Collar;
+				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = Collar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,10 +743,62 @@
 			};
 			name = Debug;
 		};
-		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+		632E1A42BF13D3F8E93D75BD1AA178C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B31FC7D50F636D0C421C0C8D0AF416 /* Pods-Collar_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65F122E86A074DAFF20F60B2EE98618E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Collar";
+				IBSC_MODULE = Collar;
+				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = Collar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -618,6 +821,103 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		94F7B20EC2041BECE5FB13EC9CF2E57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6AA3D718701AC63A37696AD5B68B9B8 /* Pods-Collar_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -643,7 +943,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -656,272 +956,50 @@
 			};
 			name = Debug;
 		};
-		1DC20CFE1CCD842286AA0ADBB36D0058 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D311E6D962528ACADE3362FD4A5B321 /* AnalyticsCollector.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AnalyticsCollector/AnalyticsCollector-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/AnalyticsCollector/AnalyticsCollector.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AnalyticsCollector;
-				PRODUCT_NAME = AnalyticsCollector;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		35210C397C568171DBAA90A5EC247883 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E33E9088BA018199DF98847D57C2554 /* Pods-AnalyticsCollector_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AnalyticsCollector_Example/Pods-AnalyticsCollector_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		49E8CC8492D805AA092CA7DB23EC7240 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF9D3274C855E5279E932F6AADFAAA2A /* Pods-AnalyticsCollector_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6A21C1CB5E09B2ADCF88F680F7043BAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F7B3806863E4812D90A2ACEE9A8497B /* Pods-AnalyticsCollector_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AnalyticsCollector_Example/Pods-AnalyticsCollector_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		BC4F41E13B38FD939A6DED17DC786D44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AnalyticsCollector";
-				IBSC_MODULE = AnalyticsCollector;
-				INFOPLIST_FILE = "Target Support Files/AnalyticsCollector/ResourceBundle-AnalyticsCollector-AnalyticsCollector-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = AnalyticsCollector;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		C946492DDADA7CFAB48D7FEFFCBEEAF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E0E363F4D1BF208D3DCC45C5E8F9D6F /* Pods-AnalyticsCollector_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CFF8693C1DCDF8AE8E8BC20A07B131DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C4CC4A67CFB047701EE88CC8CA2227 /* AnalyticsCollector.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AnalyticsCollector/AnalyticsCollector-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/AnalyticsCollector/AnalyticsCollector.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AnalyticsCollector;
-				PRODUCT_NAME = AnalyticsCollector;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35E753DAD2A07865454477C343E7915E /* Build configuration list for PBXNativeTarget "Pods-Collar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F7B20EC2041BECE5FB13EC9CF2E57D /* Debug */,
+				3EFD806B490B6CE549AA14F568D11D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				196DFA3E4A09A28224918543529A1885 /* Debug */,
-				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7026350588BAAD262CF6DB1D840A34A8 /* Build configuration list for PBXNativeTarget "AnalyticsCollector-AnalyticsCollector" */ = {
+		A32609E2A84EC6B64644D987783A2F57 /* Build configuration list for PBXNativeTarget "Collar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0242F0F0353AE19DC038E6E691AAAED6 /* Debug */,
-				BC4F41E13B38FD939A6DED17DC786D44 /* Release */,
+				0ACF194D631BB12CF8A27E926C2EA22D /* Debug */,
+				4C320A8DB7FCBD81BFF31AC497F6B3B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8DAED39D7B7C62005B2CB3BA6C1A124 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsCollector_Tests" */ = {
+		B1C8308786F5563B115AD3249783B2EB /* Build configuration list for PBXNativeTarget "Collar-Collar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49E8CC8492D805AA092CA7DB23EC7240 /* Debug */,
-				C946492DDADA7CFAB48D7FEFFCBEEAF3 /* Release */,
+				5B57833541C3A7923E39168D2650F3CD /* Debug */,
+				65F122E86A074DAFF20F60B2EE98618E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C999D37E9167C01DA6A316ACE64E5C5D /* Build configuration list for PBXNativeTarget "AnalyticsCollector" */ = {
+		C206C91AF24C39D242FE0C859434EA83 /* Build configuration list for PBXNativeTarget "Pods-Collar_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DC20CFE1CCD842286AA0ADBB36D0058 /* Debug */,
-				CFF8693C1DCDF8AE8E8BC20A07B131DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D3DBE8B31FC8C6E11326AA51FBB66680 /* Build configuration list for PBXNativeTarget "Pods-AnalyticsCollector_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35210C397C568171DBAA90A5EC247883 /* Debug */,
-				6A21C1CB5E09B2ADCF88F680F7043BAE /* Release */,
+				3EBDB30498AB66FB0F4C7EA7B21E3761 /* Debug */,
+				632E1A42BF13D3F8E93D75BD1AA178C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
