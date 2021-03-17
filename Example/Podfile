@@ -7,6 +7,5 @@ target 'Collar_Example' do
 
   target 'Collar_Tests' do
     inherit! :search_paths
-
   end
 end

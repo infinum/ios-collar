@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         LogItemPopupQueue.shared.enabled = true
         LogItemPopupQueue.shared.showOnView = { UIApplication.shared.keyWindow }
         
