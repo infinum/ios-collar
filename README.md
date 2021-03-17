@@ -20,7 +20,7 @@ Collar is available through [CocoaPods](https://cocoapods.org). To install it, s
 pod 'Collar'
 ```
 
-![UI](img/collar_light.png)![UI dark](img/collar_dark.png)![UI popup](img/popup.png)
+![UI](img/collar_ui.png)
 
 ## Usage
 
