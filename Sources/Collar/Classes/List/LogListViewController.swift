@@ -59,6 +59,11 @@ public class LogListViewController: UITableViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = "Logs"
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .systemBackground
+        } else {
+            view.backgroundColor = .white
+        }
         setupTableView()
         setupSearchController()
         setupCloseButton()
