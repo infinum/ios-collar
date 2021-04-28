@@ -88,7 +88,15 @@ public class AnalyticsCollectionManager {
 // MARK: - Logging
 
 public extension AnalyticsCollectionManager {
-        
+    
+    func track(viewController: UIViewController?) {
+        let screenClass = String(describing: type(of: viewController))
+        let screenName = viewController?.title
+        DispatchQueue.main.async { [weak self] in
+            self?.logs.append(.init(screenClass: screenClass, screenName: screenName))
+        }
+    }
+    
     func track(screenClass: String?, screenName: String?) {
         guard let screenClass = screenClass else { return }
         DispatchQueue.main.async { [weak self] in
