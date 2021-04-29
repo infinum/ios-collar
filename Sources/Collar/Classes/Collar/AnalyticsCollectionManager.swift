@@ -89,7 +89,7 @@ public class AnalyticsCollectionManager {
 
 public extension AnalyticsCollectionManager {
     
-    func track(viewController: UIViewController?) {
+    func track(viewController: UIViewController) {
         let screenClass = String(describing: type(of: viewController))
         let screenName = viewController?.title
         DispatchQueue.main.async { [weak self] in
