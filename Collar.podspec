@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'Collar'
-  s.version               = '1.0.1'
+  s.version               = '1.0.2'
   s.summary               = 'In-app analytics debugging tool'
   s.description           = <<-DESC
                           Collar simplifies analytics debugging by showing events, screen views and user properties of your app as they happen.
