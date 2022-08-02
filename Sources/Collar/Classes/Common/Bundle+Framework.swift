@@ -10,6 +10,10 @@ import Foundation
 extension Bundle {
     
     static var framework: Bundle {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #endif
+
         let bundle = Bundle(for: LogListViewController.self)
         if
             let path = bundle.path(forResource: "Collar", ofType: "bundle"),
