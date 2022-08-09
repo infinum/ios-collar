@@ -24,21 +24,7 @@ pod 'Collar'
 
 ## SwiftPM
 
-Adding the Collar as Swift package is possible in two ways: 
-
-* As a dependency to your app - using process integrated into Xcode UI
-* As a dependency to your existing Swift Package - modifying Package.swift file
-
-#### Via Xcode 
-
-To install Collar using the [Swift Package Manager](https://github.com/apple/swift-package-manager) you can follow the [tutorial published by Apple](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) using the URL for the Collar repo:
-
-1. In Xcode, select “File” → “Add packages...”
-1. Enter https://github.com/infinum/ios-collar.git
-
-#### Via Package.swift file:
-
-If you are adding Collar to your existing Swift package, adding Collar as a dependency is as easy as adding it to the dependencies value of your Package.swift:
+If you are using the [SwiftPM](https://www.swift.org/package-manager/) as your dependencies manager, add this to the dependencies in your Package.swift file:
 
 ```swift
 dependencies: [
