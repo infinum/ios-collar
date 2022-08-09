@@ -16,7 +16,7 @@ Collar is a library which simplifies analytics debugging by showing events, scre
 
 ## CocoaPods
 
-Collar is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+Collar is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your `Podfile`:
 
 ```ruby
 pod 'Collar'
@@ -24,7 +24,7 @@ pod 'Collar'
 
 ## SwiftPM
 
-If you are using the [SwiftPM](https://www.swift.org/package-manager/) as your dependencies manager, add this to the dependencies in your Package.swift file:
+If you are using the [SwiftPM](https://www.swift.org/package-manager/) as your dependencies manager, add this to the dependencies in your `Package.swift` file:
 
 ```swift
 dependencies: [
