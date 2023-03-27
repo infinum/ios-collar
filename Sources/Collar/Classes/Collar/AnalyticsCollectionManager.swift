@@ -27,8 +27,8 @@ public struct LogItem: CustomStringConvertible {
         self.init(type: .screen, name: screenName, value: screenClass)
     }
     
-    init(event: String, parameters: [String: Any]?) {
-        self.init(type: .event, name: event, parameters: parameters)
+    init(event: String, timestamp: Date, parameters: [String: Any]?) {
+        self.init(type: .event, name: event, timestamp: timestamp, parameters: parameters)
     }
     
     init(userProperty: String, value: String?) {
@@ -102,9 +102,9 @@ public extension AnalyticsCollectionManager {
         }
     }
     
-    func log(event: String, parameters: [String: Any]?) {
+    func log(event: String, timestamp: Date = Date(), parameters: [String: Any]?) {
         DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(event: event, parameters: parameters))
+            self?.logs.append(.init(event: event, timestamp: timestamp, parameters: parameters))
         }
     }
 }
