@@ -59,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Collar.bundle; path = "Collar-Collar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Collar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = Sources/Collar/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
 		11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
 		1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -70,11 +70,11 @@
 		2C327C30EE31CE7E5864A19764BDB2F3 /* Collar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Collar-Info.plist"; sourceTree = "<group>"; };
 		3B2B349E20F4B33D76FA660EBC54BEC0 /* Pods-Collar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
-		49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4AE5E8FEFEA903DB7D7D8BAAA4396CD2 /* Pods-Collar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Example-Info.plist"; sourceTree = "<group>"; };
 		5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Collar.release.xcconfig; sourceTree = "<group>"; };
 		5B4048BCF52F2986F6BC0736609E2E95 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Sources/Collar/Assets/Images.xcassets; sourceTree = "<group>"; };
-		5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Collar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Collar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5BEDE8606775CE03CA9B00D00C014029 /* Pods-Collar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Collar_Tests.modulemap"; sourceTree = "<group>"; };
 		65B31FC7D50F636D0C421C0C8D0AF416 /* Pods-Collar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
@@ -85,20 +85,23 @@
 		98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-Info.plist"; sourceTree = "<group>"; };
 		98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Example-dummy.m"; sourceTree = "<group>"; };
 		9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D4362762D3F842A00F4F09F /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
+		9D4362772D3F843600F4F09F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/Collar/Assets/Settings.storyboard; sourceTree = "<group>"; };
 		A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Collar.modulemap; sourceTree = "<group>"; };
 		B51542C4CB84D48E8B3B85240383085A /* Pods-Collar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Collar_Tests.framework; path = "Pods-Collar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Collar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Collar.framework; path = Collar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Collar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AA3D718701AC63A37696AD5B68B9B8 /* Pods-Collar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Collar.debug.xcconfig; sourceTree = "<group>"; };
 		E2A8593F53E9FAA35434A84BB88C9437 /* Pods-Collar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Collar_Example.framework; path = "Pods-Collar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D13A91F71C3138D09185575F037016 /* Pods-Collar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collar+UI.swift"; sourceTree = "<group>"; };
 		E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +109,7 @@
 		F2301AF23B138FF2C5E86E14EE6992AC /* Pods-Collar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Collar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F70D714E6646FB69DE3C4CF7F563E6CF /* Pods-Collar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
-		FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Collar-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +171,9 @@
 			children = (
 				5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */,
 				FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */,
+				9D4362762D3F842A00F4F09F /* SECURITY.md */,
+				9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */,
+				9D4362772D3F843600F4F09F /* CONTRIBUTING.md */,
 				49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */,
 			);
 			name = Pod;
@@ -233,7 +239,6 @@
 			children = (
 				C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -260,7 +265,6 @@
 			children = (
 				94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -311,7 +315,6 @@
 			children = (
 				11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -469,6 +472,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					D9059A79A14148AD231EF8FEDBA505A1 = {
+						DevelopmentTeam = 5F5M64F878;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -732,6 +740,7 @@
 			baseConfigurationReference = DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Collar";
+				DEVELOPMENT_TEAM = 5F5M64F878;
 				IBSC_MODULE = Collar;
 				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -783,6 +792,7 @@
 			baseConfigurationReference = 5800AFE7540CF11F08A9A5B14D9ABBFA /* Collar.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Collar";
+				DEVELOPMENT_TEAM = 5F5M64F878;
 				IBSC_MODULE = Collar;
 				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -849,8 +859,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
