@@ -89,7 +89,7 @@
 		9D4362772D3F843600F4F09F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DCAAD6E2D3F8A2000DF572B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../../../Desktop/Package.swift; sourceTree = "<group>"; };
+		9DCAAD6F2D3F8A5E00DF572B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/Collar/Assets/Settings.storyboard; sourceTree = "<group>"; };
 		A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Collar.modulemap; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */,
 				9D4362772D3F843600F4F09F /* CONTRIBUTING.md */,
 				49BE5CEBC6B1401A0B4B868B3AB28EF2 /* README.md */,
-				9DCAAD6E2D3F8A2000DF572B /* Package.swift */,
+				9DCAAD6F2D3F8A5E00DF572B /* Package.swift */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
