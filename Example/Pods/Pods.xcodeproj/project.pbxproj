@@ -24,6 +24,8 @@
 		9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */; };
 		9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */; };
 		9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */; };
+		9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */; };
+		9DF838972E8BE83C00C08E09 /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838962E8BE83800C08E09 /* LogListView.swift */; };
 		9E77212963AB0A21D6DC60380A5C9629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		A84E7E790277350122DA21C8FAE7D972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		B637CCDFFB36DFF6E6DCDF4C749049A3 /* Pods-Collar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */; };
@@ -91,6 +93,8 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCAAD6F2D3F8A5E00DF572B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/Collar/Assets/Settings.storyboard; sourceTree = "<group>"; };
+		9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collar+SwiftUI.swift"; sourceTree = "<group>"; };
+		9DF838962E8BE83800C08E09 /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
 		A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Collar.modulemap; sourceTree = "<group>"; };
 		B51542C4CB84D48E8B3B85240383085A /* Pods-Collar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -283,12 +287,21 @@
 		8D3DD7E4DFDF02F624F32EAA923956AE /* List */ = {
 			isa = PBXGroup;
 			children = (
+				9DF838952E8BE82D00C08E09 /* SwiftUI */,
 				E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */,
 				D3ADA3DD8D3929E91C543CE1C608E3A5 /* Cell */,
 				2FBAE393F39950844B7E05999588971B /* Views */,
 			);
 			name = List;
 			path = Sources/Collar/Classes/List;
+			sourceTree = "<group>";
+		};
+		9DF838952E8BE82D00C08E09 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				9DF838962E8BE83800C08E09 /* LogListView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		A37EC543161E505A089DC4BEB6D07162 /* Common */ = {
@@ -355,6 +368,7 @@
 		F2CDD86FB886700EE3DE4F027EB9A943 /* Collar */ = {
 			isa = PBXGroup;
 			children = (
+				9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */,
 				3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */,
 				E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */,
 			);
@@ -564,6 +578,8 @@
 				088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */,
 				90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */,
 				9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */,
+				9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */,
+				9DF838972E8BE83C00C08E09 /* LogListView.swift in Sources */,
 				B6448DAAFEAD371CD2A5465114239605 /* LogItemPopupView.swift in Sources */,
 				16FD9D5F80DADA2ADCE30B627545B4B3 /* LogListViewController.swift in Sources */,
 				1343FBC968EED772E18262E0DE159D65 /* LogTableViewCell.swift in Sources */,
@@ -620,7 +636,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Collar/Collar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Collar/Collar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Collar/Collar.modulemap";
 				PRODUCT_MODULE_NAME = Collar;
@@ -721,7 +737,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Collar/Collar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Collar/Collar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Collar/Collar.modulemap";
 				PRODUCT_MODULE_NAME = Collar;

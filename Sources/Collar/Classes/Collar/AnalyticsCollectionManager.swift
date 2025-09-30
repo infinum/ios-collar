@@ -14,7 +14,8 @@ public enum LogType: String {
     case screen = "Screen view"
 }
 
-public struct LogItem: CustomStringConvertible {
+public struct LogItem: CustomStringConvertible, Identifiable {
+    public let id = UUID()
     public let type: LogType
     public let name: String
     public let timestamp: Date
