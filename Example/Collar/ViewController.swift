@@ -40,10 +40,6 @@ class ViewController: UIViewController {
                 "source": "onboarding"
             ])
         }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            AnalyticsCollectionManager.shared.showLogs(from: self)
-        }
     }
 
     func setupButtons() {
