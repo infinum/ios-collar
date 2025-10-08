@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         LogItemPopupQueue.shared.enabled = true
         LogItemPopupQueue.shared.showOnView = { UIApplication.shared.keyWindow }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             AnalyticsCollectionManager.shared.log(event: "Test Event", parameters: [
                 "param1": "value1",
