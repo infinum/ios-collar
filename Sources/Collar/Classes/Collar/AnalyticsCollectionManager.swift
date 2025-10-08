@@ -75,9 +75,6 @@ public class AnalyticsCollectionManager {
     public private(set) var logs: [LogItem] = [] {
         didSet {
             NotificationCenter.default.post(AnalyticsCollectionManager.Notification.didUpdateLogs)
-            if let last = logs.last {
-                LogItemPopupQueue.shared.show(last)
-            }
         }
     }
 
@@ -125,6 +122,15 @@ extension LogItem {
             .data(withJSONObject: parameters, options: [.prettyPrinted, .sortedKeys])
         return data
             .flatMap { String(data: $0, encoding: .utf8) }
+    }
+
+    var subtitleDisplay: String? {
+        switch type {
+        case .event:
+            return paramsJSONString
+        case .userProperty, .screen:
+            return value
+        }
     }
 
     var pasteboardString: String {

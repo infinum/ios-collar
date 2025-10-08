@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032A71358E6AF1662BECAC2EE6274935 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */; };
 		088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */; };
-		1343FBC968EED772E18262E0DE159D65 /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */; };
-		16FD9D5F80DADA2ADCE30B627545B4B3 /* LogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */; };
-		21F51EE05BC0296B2B28C7008766F049 /* LogItemPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */; };
 		2CE113F9D16171D9812A0DC6EE7D86B8 /* Collar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */; };
 		2F027F6E30C6C479AEC1144AA04EED43 /* Pods-Collar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */; };
 		358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */; };
@@ -19,11 +15,7 @@
 		4B564716634269B52CB2C58E6344B004 /* Pods-Collar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		529FB42C9D68762C8409B065F554D4C0 /* Collar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8759AE674EB4A2D0BB81C20509C7B136 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		8E028DCAA9C1DFC6C9000EE8E4B14D5A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */; };
-		90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */; };
-		9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */; };
-		9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */; };
-		9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */; };
+		9560605A55D12E0547367E9067C40A0E /* Collar+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UIKit.swift */; };
 		9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC382E963C8F00FC4C4E /* LogItemView.swift */; };
 		9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */; };
 		9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */; };
@@ -31,11 +23,8 @@
 		9E77212963AB0A21D6DC60380A5C9629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		A84E7E790277350122DA21C8FAE7D972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		B637CCDFFB36DFF6E6DCDF4C749049A3 /* Pods-Collar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */; };
-		B6448DAAFEAD371CD2A5465114239605 /* LogItemPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */; };
 		DC28D66EE15AC41C500C266CE32E6A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		E518D38691170B91FAC25E00B49F81CC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */; };
 		EDF135ED3EE55536673FDE79A8D0F332 /* Pods-Collar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CB805FAF35E76C80D33283A2B8BE3F /* Pods-Collar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2D2340A50A364F757B55E4B44868A00 /* UITableView+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +53,9 @@
 
 /* Begin PBXFileReference section */
 		0AD0214CF3AF0DC4D34B87258E4AC60B /* Collar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Collar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogTableViewCell.xib; path = Sources/Collar/Assets/LogTableViewCell.xib; sourceTree = "<group>"; };
-		11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
 		1753DF9E17965B7788EA8870A451F38F /* Pods-Collar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Tests-dummy.m"; sourceTree = "<group>"; };
 		1B2DF38EB07E712F12EF2F264329AE3C /* Pods-Collar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Collar_Example.modulemap"; sourceTree = "<group>"; };
 		20B258528A665531BD973ADD896ADE73 /* ResourceBundle-Collar-Collar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Collar-Collar-Info.plist"; sourceTree = "<group>"; };
-		25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupQueue.swift; sourceTree = "<group>"; };
-		2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LogItemPopupView.xib; path = Sources/Collar/Assets/LogItemPopupView.xib; sourceTree = "<group>"; };
 		2C327C30EE31CE7E5864A19764BDB2F3 /* Collar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Collar-Info.plist"; sourceTree = "<group>"; };
 		3B2B349E20F4B33D76FA660EBC54BEC0 /* Pods-Collar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnalyticsCollectionManager.swift; sourceTree = "<group>"; };
@@ -81,43 +66,36 @@
 		5B514A9C27F152E70FE950F259B78733 /* Collar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Collar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5BEDE8606775CE03CA9B00D00C014029 /* Pods-Collar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Collar_Tests.modulemap"; sourceTree = "<group>"; };
 		65B31FC7D50F636D0C421C0C8D0AF416 /* Pods-Collar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
 		70CB805FAF35E76C80D33283A2B8BE3F /* Pods-Collar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Collar_Example-umbrella.h"; sourceTree = "<group>"; };
 		72E5EB0EE78D65186A3CB2C170361771 /* Collar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-prefix.pch"; sourceTree = "<group>"; };
 		93E2002A37A270E12BE23EF58C03345D /* Pods-Collar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogItemPopupView.swift; sourceTree = "<group>"; };
 		98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-Info.plist"; sourceTree = "<group>"; };
 		98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Example-dummy.m"; sourceTree = "<group>"; };
 		9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-umbrella.h"; sourceTree = "<group>"; };
-		9D36BC382E963C8F00FC4C4E /* LogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogItemView.swift; sourceTree = "<group>"; };
-		9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFilterView.swift; sourceTree = "<group>"; };
+		9D36BC382E963C8F00FC4C4E /* LogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogItemView.swift; path = SwiftUI/LogItemView.swift; sourceTree = "<group>"; };
+		9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogFilterView.swift; path = SwiftUI/LogFilterView.swift; sourceTree = "<group>"; };
 		9D4362762D3F842A00F4F09F /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
 		9D4362772D3F843600F4F09F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DCAAD6F2D3F8A5E00DF572B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Sources/Collar/Assets/Settings.storyboard; sourceTree = "<group>"; };
 		9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collar+SwiftUI.swift"; sourceTree = "<group>"; };
-		9DF838962E8BE83800C08E09 /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
-		A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9DF838962E8BE83800C08E09 /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogListView.swift; path = SwiftUI/LogListView.swift; sourceTree = "<group>"; };
 		B4B11DEB61FB728ECC6C5577373B4F88 /* Collar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Collar.modulemap; sourceTree = "<group>"; };
 		B51542C4CB84D48E8B3B85240383085A /* Pods-Collar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Collar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BE5C2AD87A611095FAC254D37B9DBFE2 /* Pods_Collar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CEB2C220366526435EB8D53132A6F0 /* Pods-Collar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Collar_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C25C0B999276B07F0B9EB43B771745C8 /* Collar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Collar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AA3D718701AC63A37696AD5B68B9B8 /* Pods-Collar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogHeaderFooterView.swift; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB6D2AB33B4C8E6C253F33FF643C9C04 /* Collar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Collar.debug.xcconfig; sourceTree = "<group>"; };
 		E2A8593F53E9FAA35434A84BB88C9437 /* Pods-Collar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E369C491D3EE3282A0D7EE0329AAA56B /* Pods_Collar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D13A91F71C3138D09185575F037016 /* Pods-Collar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Collar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collar+UI.swift"; sourceTree = "<group>"; };
-		E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogListViewController.swift; sourceTree = "<group>"; };
+		E64BC32A02554139FF83BBAB990B82E3 /* Collar+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collar+UIKit.swift"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F2301AF23B138FF2C5E86E14EE6992AC /* Pods-Collar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Collar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F70D714E6646FB69DE3C4CF7F563E6CF /* Pods-Collar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reuse.swift"; sourceTree = "<group>"; };
 		FADA84EF684F24AD08CAC6D4C757C41D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FF98CCEC4BCD8760356ABA9E47F6A7FF /* Collar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Collar-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,15 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				5B4048BCF52F2986F6BC0736609E2E95 /* Images.xcassets */,
-				2A73F8A7F5A6D9FF051BC1A930195FAB /* LogItemPopupView.xib */,
-				0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */,
-				9DE01B020D57D9EB26EB060AE1DAD396 /* Settings.storyboard */,
 				F2CDD86FB886700EE3DE4F027EB9A943 /* Collar */,
 				A37EC543161E505A089DC4BEB6D07162 /* Common */,
 				8D3DD7E4DFDF02F624F32EAA923956AE /* List */,
 				0C764ABA6FA35D061AF985550F36E921 /* Pod */,
-				85F21FDA6E88E73DC586D1A32F9D974F /* Popup */,
-				1FD03C5C8DF60F33E2D37B0A5C67C8F4 /* Settings */,
 				D5A5FE46643CE2AF72BA4DFCD636BCB4 /* Support Files */,
 			);
 			name = Collar;
@@ -235,23 +208,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FD03C5C8DF60F33E2D37B0A5C67C8F4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				A1FDED54D58CEB111D315BB57B4B0C09 /* SettingsViewController.swift */,
-			);
-			name = Settings;
-			path = Sources/Collar/Classes/Settings;
-			sourceTree = "<group>";
-		};
-		2FBAE393F39950844B7E05999588971B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C96ED747CACF491D40987FE5267D7420 /* LogHeaderFooterView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		3090D09975F5601E64043AA4F4495A2B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,51 +226,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6E2A3840EA30DD3B73D4EC74BE50BA18 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				94B4B4B4774AD67C629255C1666E118F /* LogItemPopupView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		85F21FDA6E88E73DC586D1A32F9D974F /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-				25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */,
-				6E2A3840EA30DD3B73D4EC74BE50BA18 /* View */,
-			);
-			name = Popup;
-			path = Sources/Collar/Classes/Popup;
-			sourceTree = "<group>";
-		};
 		8D3DD7E4DFDF02F624F32EAA923956AE /* List */ = {
-			isa = PBXGroup;
-			children = (
-				9DF838952E8BE82D00C08E09 /* SwiftUI */,
-				E74E310B4F7854D2C326FB82CB5C10C8 /* LogListViewController.swift */,
-				D3ADA3DD8D3929E91C543CE1C608E3A5 /* Cell */,
-				2FBAE393F39950844B7E05999588971B /* Views */,
-			);
-			name = List;
-			path = Sources/Collar/Classes/List;
-			sourceTree = "<group>";
-		};
-		9DF838952E8BE82D00C08E09 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */,
 				9D36BC382E963C8F00FC4C4E /* LogItemView.swift */,
 				9DF838962E8BE83800C08E09 /* LogListView.swift */,
 			);
-			path = SwiftUI;
+			name = List;
+			path = Sources/Collar/Classes/List;
 			sourceTree = "<group>";
 		};
 		A37EC543161E505A089DC4BEB6D07162 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				6BB3FEF77BCAA0D209A934999C10CF94 /* Bundle+Framework.swift */,
-				F86FB3B68DD6D4599E38DD44AFC66573 /* UITableView+Reuse.swift */,
 			);
 			name = Common;
 			path = Sources/Collar/Classes/Common;
@@ -329,14 +254,6 @@
 				1D15C1267A570F33EB711F43B2D75A70 /* Products */,
 				3090D09975F5601E64043AA4F4495A2B /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D3ADA3DD8D3929E91C543CE1C608E3A5 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				11D2D3AC137E37A1B7FEEE7051A6B2D8 /* LogTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		D5A5FE46643CE2AF72BA4DFCD636BCB4 /* Support Files */ = {
@@ -376,7 +293,7 @@
 			children = (
 				9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */,
 				3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */,
-				E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */,
+				E64BC32A02554139FF83BBAB990B82E3 /* Collar+UIKit.swift */,
 			);
 			name = Collar;
 			path = Sources/Collar/Classes/Collar;
@@ -549,9 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B231891799EE42EA76DD59AD37188B0 /* Images.xcassets in Resources */,
-				21F51EE05BC0296B2B28C7008766F049 /* LogItemPopupView.xib in Resources */,
-				9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */,
-				E518D38691170B91FAC25E00B49F81CC /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,20 +493,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */,
-				032A71358E6AF1662BECAC2EE6274935 /* Bundle+Framework.swift in Sources */,
 				9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */,
 				9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */,
-				9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */,
+				9560605A55D12E0547367E9067C40A0E /* Collar+UIKit.swift in Sources */,
 				088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */,
-				90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */,
-				9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */,
 				9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */,
 				9DF838972E8BE83C00C08E09 /* LogListView.swift in Sources */,
-				B6448DAAFEAD371CD2A5465114239605 /* LogItemPopupView.swift in Sources */,
-				16FD9D5F80DADA2ADCE30B627545B4B3 /* LogListViewController.swift in Sources */,
-				1343FBC968EED772E18262E0DE159D65 /* LogTableViewCell.swift in Sources */,
-				8E028DCAA9C1DFC6C9000EE8E4B14D5A /* SettingsViewController.swift in Sources */,
-				F2D2340A50A364F757B55E4B44868A00 /* UITableView+Reuse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +582,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.modulemap";
@@ -710,7 +616,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests.modulemap";
@@ -769,7 +675,7 @@
 				DEVELOPMENT_TEAM = 5F5M64F878;
 				IBSC_MODULE = Collar;
 				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = Collar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -795,7 +701,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.modulemap";
@@ -821,7 +727,7 @@
 				DEVELOPMENT_TEAM = 5F5M64F878;
 				IBSC_MODULE = Collar;
 				INFOPLIST_FILE = "Target Support Files/Collar/ResourceBundle-Collar-Collar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = Collar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -908,7 +814,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests.modulemap";

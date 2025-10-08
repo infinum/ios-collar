@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9D36BC3D2E96655000FC4C4E /* CollarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC3C2E96654700FC4C4E /* CollarView.swift */; };
 		B2D3D4AB648540E45EFF35A6 /* Pods_Collar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE7232902A7C113E8670C9D /* Pods_Collar_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		678E4B45922B91E7BB3FFBA2 /* Pods_Collar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCE51EA2B04F3FF3038C4AE /* Collar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Collar.podspec; path = ../Collar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		74CA5A36491697FA9E8C6663 /* Pods-Collar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collar_Example.release.xcconfig"; path = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D36BC3C2E96654700FC4C4E /* CollarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollarView.swift; sourceTree = "<group>"; };
 		EC616F692BEB79153E17B516 /* Pods-Collar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Collar_Tests/Pods-Collar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6E38067A9C521871E1BBBF5 /* Pods-Collar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collar_Example.debug.xcconfig"; path = "Target Support Files/Pods-Collar_Example/Pods-Collar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 		607FACD21AFB9204008FA782 /* Example for Collar */ = {
 			isa = PBXGroup;
 			children = (
+				9D36BC3C2E96654700FC4C4E /* CollarView.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -333,6 +336,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9D36BC3D2E96655000FC4C4E /* CollarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
