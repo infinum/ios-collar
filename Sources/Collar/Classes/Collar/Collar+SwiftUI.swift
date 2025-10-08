@@ -14,3 +14,22 @@ public extension View {
         self.sheet(isPresented: isPresented) { LogListView() }
     }
 }
+
+extension LogType {
+
+    var color: Color {
+        switch self {
+        case .userProperty: .teal
+        case .event: .green
+        case .screen: .indigo
+        }
+    }
+
+    var icon: Image {
+        switch self {
+        case .userProperty: Image(systemName: "wrench.and.screwdriver.fill")
+        case .event: Image(systemName: "hand.tap.fill")
+        case .screen: Image(systemName: "iphone.app.switcher")
+        }
+    }
+}

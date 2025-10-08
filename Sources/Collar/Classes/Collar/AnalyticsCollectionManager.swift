@@ -84,6 +84,10 @@ public class AnalyticsCollectionManager {
     public func clearLogs() {
         logs = []
     }
+
+    public func clearLog(_ logItem: LogItem) {
+        logs = logs.filter { $0.id != logItem.id }
+    }
 }
 
 // MARK: - Logging
@@ -121,5 +125,11 @@ extension LogItem {
             .data(withJSONObject: parameters, options: [.prettyPrinted, .sortedKeys])
         return data
             .flatMap { String(data: $0, encoding: .utf8) }
+    }
+
+    var pasteboardString: String {
+        let parameters = "Parameters: " + (subtitleDisplay ?? "")
+        let timestamp = "Timestamp: " + timestamp.description
+        return type.rawValue + ": " + name + "\n" + timestamp + "\n" + parameters
     }
 }

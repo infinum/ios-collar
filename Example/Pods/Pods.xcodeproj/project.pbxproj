@@ -24,6 +24,8 @@
 		9164AE61F5F6FB72F71D62F02477B8D7 /* LogItemPopupQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEEE62637D699CABE67810E3EEDE9D /* LogItemPopupQueue.swift */; };
 		9185CFE29A8FF4B7C9CE34C1172C432C /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1BFCE352A4F7BE3F8E7979E982A762 /* LogTableViewCell.xib */; };
 		9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UI.swift */; };
+		9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC382E963C8F00FC4C4E /* LogItemView.swift */; };
+		9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */; };
 		9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */; };
 		9DF838972E8BE83C00C08E09 /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838962E8BE83800C08E09 /* LogListView.swift */; };
 		9E77212963AB0A21D6DC60380A5C9629 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
@@ -87,6 +89,8 @@
 		98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-Info.plist"; sourceTree = "<group>"; };
 		98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Example-dummy.m"; sourceTree = "<group>"; };
 		9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-umbrella.h"; sourceTree = "<group>"; };
+		9D36BC382E963C8F00FC4C4E /* LogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogItemView.swift; sourceTree = "<group>"; };
+		9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFilterView.swift; sourceTree = "<group>"; };
 		9D4362762D3F842A00F4F09F /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
 		9D4362772D3F843600F4F09F /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		9D4362782D3F843700F4F09F /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 		9DF838952E8BE82D00C08E09 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */,
+				9D36BC382E963C8F00FC4C4E /* LogItemView.swift */,
 				9DF838962E8BE83800C08E09 /* LogListView.swift */,
 			);
 			path = SwiftUI;
@@ -574,6 +580,8 @@
 			files = (
 				358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */,
 				032A71358E6AF1662BECAC2EE6274935 /* Bundle+Framework.swift in Sources */,
+				9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */,
+				9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */,
 				9560605A55D12E0547367E9067C40A0E /* Collar+UI.swift in Sources */,
 				088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */,
 				90F8B7CF3A7B8B45D80FCCF36161B14A /* LogHeaderFooterView.swift in Sources */,

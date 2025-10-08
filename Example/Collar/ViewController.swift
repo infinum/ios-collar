@@ -14,9 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        LogItemPopupQueue.shared.enabled = true
-        LogItemPopupQueue.shared.showOnView = { UIApplication.shared.keyWindow }
 
         let button = UIButton(type: .system)
         button.setTitle("Open SwiftUI View", for: .normal)
@@ -50,10 +47,21 @@ class ViewController: UIViewController {
                 "target": "details",
                 "source": "onboarding"
             ])
+
+            AnalyticsCollectionManager.shared.log(event: "Login pressed", parameters: [
+                "type": "guest",
+                "target": "details",
+                "source": "recipeDetails",
+                "recipeId": "hjdshbf-oirfbhfj-33fnjjds",
+                "timestamp:": "1759828788",
+                "action": "saveToFavorites",
+                "isFavorite" : "true",
+                "prepared": "true"
+            ])
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-            AnalyticsCollectionManager.shared.showLogs(from: self)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            AnalyticsCollectionManager.shared.showCollarLogs(from: self)
         }
     }
 
