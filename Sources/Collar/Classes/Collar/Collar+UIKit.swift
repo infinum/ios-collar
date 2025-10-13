@@ -13,6 +13,7 @@ import SwiftUI
 
 public extension AnalyticsCollectionManager {
 
+    @MainActor
     func showLogs(from viewController: UIViewController) {
         let hostingController = UIHostingController(rootView: LogListView())
         hostingController.modalPresentationStyle = .formSheet

@@ -14,7 +14,7 @@ public enum LogType: String {
     case screen = "Screen view"
 }
 
-public struct LogItem: CustomStringConvertible, Identifiable {
+public struct LogItem: CustomStringConvertible, Identifiable, @unchecked Sendable {
     public let id = UUID()
     public let type: LogType
     public let name: String
@@ -22,20 +22,24 @@ public struct LogItem: CustomStringConvertible, Identifiable {
     public let value: String?
     public let parameters: [String: Any]?
 
-    static let dateFormatter = ISO8601DateFormatter()
+    private static var dateFormatter: ISO8601DateFormatter {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return formatter
+    }
 
     init(screenName: String, screenClass: String?) {
         self.init(type: .screen, name: screenName, value: screenClass)
     }
-    
+
     init(event: String, timestamp: Date, parameters: [String: Any]?) {
         self.init(type: .event, name: event, timestamp: timestamp, parameters: parameters)
     }
-    
+
     init(userProperty: String, value: String?) {
         self.init(type: .userProperty, name: userProperty, value: value)
     }
-    
+
     init(type: LogType, name: String, timestamp: Date = Date(), value: String? = nil, parameters: [String: Any]? = nil) {
         self.type = type
         self.name = name
@@ -64,14 +68,16 @@ public struct LogItem: CustomStringConvertible, Identifiable {
     }
 }
 
-public class AnalyticsCollectionManager {
-    
+public class AnalyticsCollectionManager: @unchecked Sendable {
+
     public enum Notification {
-        public static var didUpdateLogs = Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
+        public static var didUpdateLogs: Foundation.Notification {
+            return Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
+        }
     }
-    
+
     public static let shared = AnalyticsCollectionManager()
-    
+
     public private(set) var logs: [LogItem] = [] {
         didSet {
             NotificationCenter.default.post(AnalyticsCollectionManager.Notification.didUpdateLogs)
@@ -90,29 +96,32 @@ public class AnalyticsCollectionManager {
 // MARK: - Logging
 
 public extension AnalyticsCollectionManager {
-    
+
     func track(screenName: String?, screenClass: String?) {
         guard let screenName = screenName else { return }
         DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(screenName: screenName, screenClass: screenClass))
+            let capturedLog = LogItem(screenName: screenName, screenClass: screenClass)
+            self?.logs.append(capturedLog)
         }
     }
 
     func setUserProperty(_ value: String?, forName name: String) {
         DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(userProperty: name, value: value))
+            let capturedLog = LogItem(userProperty: name, value: value)
+            self?.logs.append(capturedLog)
         }
     }
-    
+
     func log(event: String, timestamp: Date = Date(), parameters: [String: Any]?) {
+        let capturedLog = LogItem(event: event, timestamp: timestamp, parameters: parameters)
         DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(event: event, timestamp: timestamp, parameters: parameters))
+            self?.logs.append(capturedLog)
         }
     }
 }
 
 extension LogItem {
-    
+
     var paramsJSONString: String? {
         guard
             let parameters = parameters,
