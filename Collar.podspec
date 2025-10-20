@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'Collar'
-  s.version               = '1.0.4'
+  s.version               = '2.0.0'
   s.summary               = 'In-app analytics debugging tool'
   s.description           = <<-DESC
                           Collar simplifies analytics debugging by showing events, screen views and user properties of your app as they happen.
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source                = { :git => 'https://github.com/infinum/ios-collar.git', :tag => s.version.to_s }
   s.platform              = :ios
   s.swift_version         = "5.1"
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '15.0'
   s.source_files          = 'Sources/Collar/Classes/**/*'
   s.resource_bundles      = { 'Collar' => ['Sources/Collar/Assets/**/*'] }
-  s.frameworks            = 'UIKit'
+  s.frameworks            = 'UIKit, SwiftUI'
 end

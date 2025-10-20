@@ -9,8 +9,8 @@ Collar is a library which simplifies analytics debugging by showing events, scre
 ## Requirements
 
 * Swift 5.1
-* Xcode 11.0
-* iOS 11.0
+* Xcode 14.0
+* iOS 15.0
 
 ## Installation
 
@@ -59,23 +59,17 @@ AnalyticsCollectionManager.shared.track(screenName: "Home", screenClass: "HomeVi
 ##### 2. At the point where you want to display collected logs, you can just put the following line:
 
 ```swift
+/// UIKit
 AnalyticsCollectionManager.shared.showLogs(from: viewController)
+
+/// SwiftUI
+Button(action: { isPresented = true }) { ... }
+    .collarLogSheet(isPresented: $isPresented)
 ```
-
-##### 3. If you want to display popup every time event/user property/screen view is tracked, you can just use the following snippet:
-
-```swift
-// Also controllable from settings screen inside logs view
-LogItemPopupQueue.shared.enabled = true
-// Popup dismisses on tap or after defined number of seconds
-LogItemPopupQueue.shared.showOnView = { UIApplication.shared.keyWindow }
-```
-
-If you would like to receive notifications when new logs are added to the list, your app can observe `AnalyticsCollectionManager.Notification.didUpdateLogs` notification.
 
 ## Important
 
-Please make sure that `AnalyticsCollectionManager` and `LogItemPopupQueue` are not used in production builds. Best option would be not to include Collar in you production targets/configurations at all, for example:
+Please make sure that `AnalyticsCollectionManager` is not used in production builds. Best option would be not to include Collar in you production targets/configurations at all, for example:
 
 ```ruby
 pod 'Collar', :configurations => ['Development-release', 'Development-debug']

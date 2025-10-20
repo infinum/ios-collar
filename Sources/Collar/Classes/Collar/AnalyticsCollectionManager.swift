@@ -14,7 +14,8 @@ public enum LogType: String {
     case screen = "Screen view"
 }
 
-public struct LogItem: CustomStringConvertible {
+public struct LogItem: CustomStringConvertible, Identifiable {
+    public let id = UUID()
     public let type: LogType
     public let name: String
     public let timestamp: Date
@@ -74,14 +75,15 @@ public class AnalyticsCollectionManager {
     public private(set) var logs: [LogItem] = [] {
         didSet {
             NotificationCenter.default.post(AnalyticsCollectionManager.Notification.didUpdateLogs)
-            if let last = logs.last {
-                LogItemPopupQueue.shared.show(last)
-            }
         }
     }
 
     public func clearLogs() {
         logs = []
+    }
+
+    public func clearLog(_ logItem: LogItem) {
+        logs = logs.filter { $0.id != logItem.id }
     }
 }
 
@@ -120,5 +122,20 @@ extension LogItem {
             .data(withJSONObject: parameters, options: [.prettyPrinted, .sortedKeys])
         return data
             .flatMap { String(data: $0, encoding: .utf8) }
+    }
+
+    var subtitleDisplay: String? {
+        switch type {
+        case .event:
+            return paramsJSONString
+        case .userProperty, .screen:
+            return value
+        }
+    }
+
+    var pasteboardString: String {
+        let parameters = "Parameters: " + (subtitleDisplay ?? "")
+        let timestamp = "Timestamp: " + timestamp.description
+        return type.rawValue + ": " + name + "\n" + timestamp + "\n" + parameters
     }
 }
