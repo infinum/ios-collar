@@ -11,7 +11,6 @@ import Collar
 
 struct CollarView: View {
 
-    private let analyticsCollectionManager = AnalyticsCollectionManager.shared
     @State private var isPresented = false
 
     var body: some View {
