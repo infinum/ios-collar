@@ -18,29 +18,22 @@ class ViewController: UIViewController {
         view.backgroundColor = .systemBackground
         setupButtons()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            AnalyticsCollectionManager.shared.log(event: "Test Event", parameters: [
-                "param1": "value1",
-                "param2": "value2"
-            ])
-        }
+        AnalyticsCollectionManager.shared.log(event: "Test Event", parameters: [
+            "param1": "value1",
+            "param2": "value2"
+        ])
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            AnalyticsCollectionManager.shared.setUserProperty("up_value", forName: "up_name")
-        }
+        AnalyticsCollectionManager.shared.setUserProperty("up_value", forName: "up_name")
+        AnalyticsCollectionManager.shared.track(screenName: "Profile Screen", screenClass: "UIViewController")
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            AnalyticsCollectionManager.shared.track(screenName: "Profile Screen", screenClass: "UIViewController")
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-            AnalyticsCollectionManager.shared.log(event: "Login pressed", parameters: [
-                "type": "guest",
-                "target": "details",
-                "source": "onboarding",
-                "details": ["email": "user@example.com", "age": 25]
-            ])
-        }
+        AnalyticsCollectionManager.shared.log(event: "Login pressed", parameters: [
+            "type": "guest",
+            "target": "details",
+            "source": "onboarding",
+            "details": ["email": "user@example.com", "age": 25],
+            "consents": ["marketing": true, "personalization": false, "usage": true],
+            "sessionId": LoggerJsonValue(UUID())
+        ])
     }
 
     func setupButtons() {

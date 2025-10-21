@@ -22,7 +22,12 @@ struct LogListView: View {
 
     var filteredItems: [LogItem] {
         items.filter { item in
-            let matchesSearch: Bool
+            var matchesSearch: Bool = if searchText.isEmpty {
+                true
+            } else {
+                item.name.localizedCaseInsensitiveContains(searchText) ||
+                (item.subtitleDisplay ?? "").localizedCaseInsensitiveContains(searchText)
+            }
             if searchText.isEmpty {
                 matchesSearch = true
             } else {
@@ -31,11 +36,10 @@ struct LogListView: View {
                 (item.subtitleDisplay ?? "").localizedCaseInsensitiveContains(searchText)
             }
 
-            let matchesFilter: Bool
-            if selectedFilterType == .all {
-                matchesFilter = true
+            let matchesFilter: Bool = if selectedFilterType == .all {
+                true
             } else {
-                matchesFilter = selectedFilterType.logType.contains(item.type)
+                selectedFilterType.logType.contains(item.type)
             }
 
             return matchesSearch && matchesFilter

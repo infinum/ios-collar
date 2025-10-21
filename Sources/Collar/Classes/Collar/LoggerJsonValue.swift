@@ -29,8 +29,8 @@ extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
         self = .int(value)
     }
 
-    public init(
-        booleanLiteral value: Bool) { self = .bool(value)
+    public init(booleanLiteral value: Bool) {
+        self = .bool(value)
     }
 
     public init(arrayLiteral elements: LoggerJsonValue...) {
@@ -39,6 +39,10 @@ extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
 
     public init(dictionaryLiteral elements: (String, LoggerJsonValue)...) {
         self = .object(Dictionary(uniqueKeysWithValues: elements))
+    }
+
+    public init(_ uuid: UUID) {
+        self = .string(uuid.uuidString)
     }
 }
 
