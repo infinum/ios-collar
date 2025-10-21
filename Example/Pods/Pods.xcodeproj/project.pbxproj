@@ -16,6 +16,8 @@
 		529FB42C9D68762C8409B065F554D4C0 /* Collar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8759AE674EB4A2D0BB81C20509C7B136 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		9560605A55D12E0547367E9067C40A0E /* Collar+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BC32A02554139FF83BBAB990B82E3 /* Collar+UIKit.swift */; };
+		9D204E1E2EA77C0D0027772D /* LogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D204E1D2EA77C0A0027772D /* LogItem.swift */; };
+		9D204E202EA77C5E0027772D /* LoggerJsonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D204E1F2EA77C5A0027772D /* LoggerJsonValue.swift */; };
 		9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC382E963C8F00FC4C4E /* LogItemView.swift */; };
 		9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */; };
 		9DF838942E8BE7E100C08E09 /* Collar+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */; };
@@ -72,6 +74,8 @@
 		98482DF0BB26926CAF81C324A23CD67A /* Pods-Collar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Collar_Tests-Info.plist"; sourceTree = "<group>"; };
 		98BCFAECE4C47D11C8638DB7A0461AB0 /* Pods-Collar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Collar_Example-dummy.m"; sourceTree = "<group>"; };
 		9C3D40F14E89864020FC8668E0DD98D8 /* Collar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Collar-umbrella.h"; sourceTree = "<group>"; };
+		9D204E1D2EA77C0A0027772D /* LogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogItem.swift; path = ../LogItem.swift; sourceTree = "<group>"; };
+		9D204E1F2EA77C5A0027772D /* LoggerJsonValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoggerJsonValue.swift; path = ../LoggerJsonValue.swift; sourceTree = "<group>"; };
 		9D36BC382E963C8F00FC4C4E /* LogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogItemView.swift; path = SwiftUI/LogItemView.swift; sourceTree = "<group>"; };
 		9D36BC3A2E963F8E00FC4C4E /* LogFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogFilterView.swift; path = SwiftUI/LogFilterView.swift; sourceTree = "<group>"; };
 		9D4362762D3F842A00F4F09F /* SECURITY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
@@ -237,6 +241,15 @@
 			path = Sources/Collar/Classes/List;
 			sourceTree = "<group>";
 		};
+		9D204E212EA77CBA0027772D /* LogItem */ = {
+			isa = PBXGroup;
+			children = (
+				9D204E1F2EA77C5A0027772D /* LoggerJsonValue.swift */,
+				9D204E1D2EA77C0A0027772D /* LogItem.swift */,
+			);
+			path = LogItem;
+			sourceTree = "<group>";
+		};
 		A37EC543161E505A089DC4BEB6D07162 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,8 +304,9 @@
 		F2CDD86FB886700EE3DE4F027EB9A943 /* Collar */ = {
 			isa = PBXGroup;
 			children = (
-				9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */,
+				9D204E212EA77CBA0027772D /* LogItem */,
 				3F465FE79D774882B4F6E3665DEC3624 /* AnalyticsCollectionManager.swift */,
+				9DF838932E8BE7DC00C08E09 /* Collar+SwiftUI.swift */,
 				E64BC32A02554139FF83BBAB990B82E3 /* Collar+UIKit.swift */,
 			);
 			name = Collar;
@@ -493,7 +507,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				358384F2EF2F3F4F095DF3AF09826CFD /* AnalyticsCollectionManager.swift in Sources */,
+				9D204E1E2EA77C0D0027772D /* LogItem.swift in Sources */,
 				9D36BC392E963C9600FC4C4E /* LogItemView.swift in Sources */,
+				9D204E202EA77C5E0027772D /* LoggerJsonValue.swift in Sources */,
 				9D36BC3B2E963F9500FC4C4E /* LogFilterView.swift in Sources */,
 				9560605A55D12E0547367E9067C40A0E /* Collar+UIKit.swift in Sources */,
 				088FE7F02534BABDAC22542E3FFF68DD /* Collar-dummy.m in Sources */,

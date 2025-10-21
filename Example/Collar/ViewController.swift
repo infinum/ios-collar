@@ -37,7 +37,8 @@ class ViewController: UIViewController {
             AnalyticsCollectionManager.shared.log(event: "Login pressed", parameters: [
                 "type": "guest",
                 "target": "details",
-                "source": "onboarding"
+                "source": "onboarding",
+                "details": ["email": "user@example.com", "age": 25]
             ])
         }
     }
