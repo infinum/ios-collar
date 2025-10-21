@@ -8,8 +8,8 @@ Collar is a library which simplifies analytics debugging by showing events, scre
 
 ## Requirements
 
-* Swift 5.1
-* Xcode 14.0
+* Swift 6.0
+* Xcode 16.0
 * iOS 15.0
 
 ## Installation

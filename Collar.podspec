@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author                = { 'Filip Gulan' => 'gulan.filip@gmail.com' }
   s.source                = { :git => 'https://github.com/infinum/ios-collar.git', :tag => s.version.to_s }
   s.platform              = :ios
-  s.swift_version         = "5.1"
+  s.swift_version         = "6.0"
   s.ios.deployment_target = '15.0'
   s.source_files          = 'Sources/Collar/Classes/**/*'
   s.resource_bundles      = { 'Collar' => ['Sources/Collar/Assets/**/*'] }
