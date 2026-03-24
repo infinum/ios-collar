@@ -20,11 +20,11 @@ public struct LogItem: CustomStringConvertible, Identifiable, Sendable {
     public let value: String?
     public let parameters: [String: LoggerJsonValue]?
 
-    private static var dateFormatter: ISO8601DateFormatter {
+    private nonisolated(unsafe) static let dateFormatter: ISO8601DateFormatter = {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
         return formatter
-    }
+    }()
 
     init(screenName: String, screenClass: String?) {
         self.init(type: .screen, name: screenName, value: screenClass)

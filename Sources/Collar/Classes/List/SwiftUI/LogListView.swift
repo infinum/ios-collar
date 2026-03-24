@@ -121,7 +121,12 @@ struct LogListView: View {
     }
 
     private func updateLogs() {
-        items = analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
+        Task {
+            let logs = await analyticsManager.logs
+            await MainActor.run {
+                items = logs.sorted(by: { $0.timestamp > $1.timestamp })
+            }
+        }
     }
 
     private func navigationView<Content: View>(@ViewBuilder content: () -> Content) -> some View {
@@ -131,7 +136,11 @@ struct LogListView: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
-                            Button(role: .destructive, action: analyticsManager.clearLogs) {
+                            Button(role: .destructive) {
+                                Task {
+                                    await analyticsManager.clearLogs()
+                                }
+                            } label: {
                                 Label(Constants.clearLogs, systemImage: "trash.fill")
                             }
                         } label: {

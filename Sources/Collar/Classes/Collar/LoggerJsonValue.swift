@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum LoggerJsonValue: Sendable {
+public enum LoggerJsonValue: Sendable, Equatable {
     case string(String)
     case int(Int)
     case double(Double)
@@ -49,13 +49,13 @@ extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
 extension LoggerJsonValue {
     var jsonCompatible: Any {
         switch self {
-        case .string(let s): return s
-        case .int(let i): return i
-        case .double(let d): return d
-        case .bool(let b): return b
-        case .array(let arr): return arr.map { $0.jsonCompatible }
-        case .object(let dict): return dict.mapValues { $0.jsonCompatible }
-        case .null: return NSNull()
+        case .string(let s): s
+        case .int(let i): i
+        case .double(let d): d
+        case .bool(let b): b
+        case .array(let arr): arr.map { $0.jsonCompatible }
+        case .object(let dict): dict.mapValues { $0.jsonCompatible }
+        case .null: NSNull()
         }
     }
 }
