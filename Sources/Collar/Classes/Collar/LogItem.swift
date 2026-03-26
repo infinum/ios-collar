@@ -6,6 +6,8 @@
 //  Copyright © 2025 Infinum. All rights reserved.
 //
 
+import Foundation
+
 public enum LogType: String, Sendable {
     case userProperty = "User property"
     case event = "Event"

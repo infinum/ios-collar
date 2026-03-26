@@ -16,10 +16,11 @@ public extension AnalyticsCollectionManager {
     /// Presents the logs UI from a view controller.
     /// - Parameter viewController: The view controller to present from
     /// - Note: This method is async and must be awaited. It switches to the main actor for UI presentation.
-    @MainActor
-    func showLogs(from viewController: UIViewController) async {
-        let hostingController = UIHostingController(rootView: LogListView())
-        hostingController.modalPresentationStyle = .formSheet
-        viewController.present(hostingController, animated: true)
+    nonisolated func showLogs(from viewController: UIViewController) async {
+        await MainActor.run {
+            let hostingController = UIHostingController(rootView: LogListView())
+            hostingController.modalPresentationStyle = .formSheet
+            viewController.present(hostingController, animated: true)
+        }
     }
 }

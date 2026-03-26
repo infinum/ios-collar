@@ -179,14 +179,6 @@ let logs = AnalyticsCollectionManager.shared.logs // Blocking sync call
 let logs = await AnalyticsCollectionManager.shared.logs // Non-blocking async
 ```
 
-### Benefits of v2.0
-
-- ✅ **Compiler-verified thread safety** through Actor isolation
-- ✅ **No data races** - Swift 6 concurrency checking prevents issues at compile time
-- ✅ **Better performance** - 10x faster with cached DateFormatter
-- ✅ **Non-blocking APIs** - Async operations don't block calling threads
-- ✅ **Modern Swift** - Follows Swift 6 best practices and concurrency patterns
-
 ## Important
 
 Please make sure that `AnalyticsCollectionManager` is not used in production builds. Best option would be not to include Collar in you production targets/configurations at all, for example:

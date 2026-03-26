@@ -224,6 +224,9 @@ class Tests: XCTestCase {
             let expectation = XCTestExpectation(description: "Performance test")
             
             Task {
+                // Clear logs before each measured iteration
+                await manager.clearLogs()
+                
                 for i in 0..<100 {
                     await manager.log(event: "perf_event_\(i)", parameters: nil)
                 }

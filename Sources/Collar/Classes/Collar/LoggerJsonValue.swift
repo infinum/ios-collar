@@ -18,8 +18,8 @@ public enum LoggerJsonValue: Sendable, Equatable {
     case null
 }
 
-extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiteral, ExpressibleByBooleanLiteral,
-                         ExpressibleByArrayLiteral, ExpressibleByDictionaryLiteral {
+extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiteral, ExpressibleByFloatLiteral,
+                         ExpressibleByBooleanLiteral, ExpressibleByArrayLiteral, ExpressibleByDictionaryLiteral {
 
     public init(stringLiteral value: String) {
         self = .string(value)
@@ -27,6 +27,10 @@ extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
 
     public init(integerLiteral value: Int) {
         self = .int(value)
+    }
+
+    public init(floatLiteral value: Double) {
+        self = .double(value)
     }
 
     public init(booleanLiteral value: Bool) {
