@@ -1,5 +1,5 @@
 //
-//  JSONLoggerValue.swift
+//  LoggerJsonValue.swift
 //  Collar
 //
 //  Created by Petar Jadek on 21.10.2025.
@@ -42,7 +42,7 @@ extension LoggerJsonValue: ExpressibleByStringLiteral, ExpressibleByIntegerLiter
     }
 
     public init(dictionaryLiteral elements: (String, LoggerJsonValue)...) {
-        self = .object(Dictionary(uniqueKeysWithValues: elements))
+        self = .object(Dictionary(elements, uniquingKeysWith: { first, _ in first }))
     }
 
     public init(_ uuid: UUID) {

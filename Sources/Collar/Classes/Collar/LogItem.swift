@@ -22,12 +22,6 @@ public struct LogItem: CustomStringConvertible, Identifiable, Sendable {
     public let value: String?
     public let parameters: [String: LoggerJsonValue]?
 
-    private nonisolated(unsafe) static let dateFormatter: ISO8601DateFormatter = {
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        return formatter
-    }()
-
     init(screenName: String, screenClass: String?) {
         self.init(type: .screen, name: screenName, value: screenClass)
     }
@@ -52,7 +46,9 @@ public struct LogItem: CustomStringConvertible, Identifiable, Sendable {
         var lines: [String] = []
         lines.append("Type: \(type.rawValue)")
         lines.append("Name: \(name)")
-        lines.append("Timestamp: \(LogItem.dateFormatter.string(from: timestamp))")
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        lines.append("Timestamp: \(formatter.string(from: timestamp))")
         if let value = value {
             switch type {
             case .screen:

@@ -8,50 +8,47 @@
 
 import Foundation
 
-/// Actor-based analytics collection manager providing thread-safe log management.
-/// All methods are async and must be awaited. Actor isolation provides compiler-verified thread safety.
-public actor AnalyticsCollectionManager {
+/// Thread-safe analytics collection manager.
+/// Internal thread safety is managed via a serial dispatch queue.
+public final class AnalyticsCollectionManager: @unchecked Sendable {
 
-    /// Notifications posted when logs are updated.
-    /// - Important: Notifications are posted on the actor's internal queue.
-    ///   If you need to update UI in response to this notification,
-    ///   dispatch to the main queue in your observer using Task { @MainActor in ... }.
+    /// Notification name posted when logs are updated.
+    /// - Important: Posted on the internal serial queue. Dispatch to the main queue
+    ///   in your observer if you need to update UI.
     public enum Notification {
-        public static var didUpdateLogs: Foundation.Notification {
-            Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
-        }
+        public static let didUpdateLogs = Foundation.Notification.Name("AnalyticsCollectionManager.didUpdateLogs")
     }
 
     /// Shared instance for application-wide analytics collection.
-    /// Thread-safe access through actor isolation.
     public static let shared = AnalyticsCollectionManager()
 
+    private let queue = DispatchQueue(label: "com.infinum.collar.analytics", qos: .utility)
     private var _logs: [LogItem] = []
 
-    /// All collected log items.
-    /// - Returns: Array of log items in chronological order
-    /// - Note: This is an async operation that suspends until the actor can provide safe access
+    private init() {}
+
+    /// All collected log items. Synchronously waits for any pending writes to complete.
     public var logs: [LogItem] {
-        get async {
-            _logs
-        }
+        queue.sync { _logs }
     }
 
     // MARK: - Log Management
 
     /// Clears all collected logs.
-    /// - Note: This method is async and must be awaited
-    public func clearLogs() async {
-        _logs.removeAll()
-        postUpdateNotification()
+    public func clearLogs() {
+        queue.async { [self] in
+            _logs.removeAll()
+            postUpdateNotification()
+        }
     }
 
     /// Removes a specific log item.
     /// - Parameter logItem: The log item to remove
-    /// - Note: This method is async and must be awaited
-    public func clearLog(_ logItem: LogItem) async {
-        _logs.removeAll { $0.id == logItem.id }
-        postUpdateNotification()
+    public func clearLog(_ logItem: LogItem) {
+        queue.async { [self] in
+            _logs.removeAll { $0.id == logItem.id }
+            postUpdateNotification()
+        }
     }
 
     // MARK: - Logging
@@ -60,19 +57,21 @@ public actor AnalyticsCollectionManager {
     /// - Parameters:
     ///   - screenName: Name of the screen being viewed
     ///   - screenClass: Optional screen class identifier
-    /// - Note: This method is async and must be awaited
-    public func track(screenName: String?, screenClass: String? = nil) async {
-        guard let screenName = screenName else { return }
-        appendLog(LogItem(screenName: screenName, screenClass: screenClass))
+    public func track(screenName: String?, screenClass: String? = nil) {
+        guard let screenName else { return }
+        queue.async { [self] in
+            appendLog(LogItem(screenName: screenName, screenClass: screenClass))
+        }
     }
 
     /// Sets a user property for analytics.
     /// - Parameters:
     ///   - value: Property value (nil to remove)
     ///   - name: Property name
-    /// - Note: This method is async and must be awaited
-    public func setUserProperty(_ value: String?, forName name: String) async {
-        appendLog(LogItem(userProperty: name, value: value))
+    public func setUserProperty(_ value: String?, forName name: String) {
+        queue.async { [self] in
+            appendLog(LogItem(userProperty: name, value: value))
+        }
     }
 
     /// Logs an analytics event with optional parameters.
@@ -80,9 +79,10 @@ public actor AnalyticsCollectionManager {
     ///   - event: Event name (e.g., "button_tap", "screen_view")
     ///   - timestamp: Event timestamp (defaults to current time)
     ///   - parameters: Optional key-value pairs for event metadata
-    /// - Note: This method is async and must be awaited
-    public func log(event: String, timestamp: Date = Date(), parameters: [String: LoggerJsonValue]? = nil) async {
-        appendLog(LogItem(event: event, timestamp: timestamp, parameters: parameters))
+    public func log(event: String, timestamp: Date = Date(), parameters: [String: LoggerJsonValue]? = nil) {
+        queue.async { [self] in
+            appendLog(LogItem(event: event, timestamp: timestamp, parameters: parameters))
+        }
     }
 
     // MARK: - Private helpers
@@ -93,6 +93,6 @@ public actor AnalyticsCollectionManager {
     }
 
     private func postUpdateNotification() {
-        NotificationCenter.default.post(AnalyticsCollectionManager.Notification.didUpdateLogs)
+        NotificationCenter.default.post(name: AnalyticsCollectionManager.Notification.didUpdateLogs, object: nil)
     }
 }

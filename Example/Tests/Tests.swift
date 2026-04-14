@@ -3,69 +3,69 @@ import Collar
 
 class Tests: XCTestCase {
     
-    override func setUp() async throws {
-        try await super.setUp()
-        // Clear logs before each test
-        await AnalyticsCollectionManager.shared.clearLogs()
+    override func setUp() {
+        super.setUp()
+        // Clear logs before each test and synchronize via logs read
+        AnalyticsCollectionManager.shared.clearLogs()
+        _ = AnalyticsCollectionManager.shared.logs
     }
-    
-    override func tearDown() async throws {
-        // Clear logs after each test
-        await AnalyticsCollectionManager.shared.clearLogs()
-        try await super.tearDown()
+
+    override func tearDown() {
+        AnalyticsCollectionManager.shared.clearLogs()
+        super.tearDown()
     }
     
     // MARK: - Basic Logging Tests
     
-    func testLogEventWithParameters() async throws {
+    func testLogEventWithParameters() {
         let manager = AnalyticsCollectionManager.shared
-        
+
         // Log test event
-        await manager.log(
+        manager.log(
             event: "test_event",
             parameters: [
                 "user_id": .string("123"),
                 "action": .string("tap")
             ]
         )
-        
+
         // Verify log was added
-        let logs = await manager.logs
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 1)
         XCTAssertEqual(logs.first?.name, "test_event")
         XCTAssertEqual(logs.first?.parameters?["user_id"], .string("123"))
         XCTAssertEqual(logs.first?.parameters?["action"], .string("tap"))
     }
-    
-    func testLogEventWithoutParameters() async throws {
+
+    func testLogEventWithoutParameters() {
         let manager = AnalyticsCollectionManager.shared
-        
-        await manager.log(event: "simple_event", parameters: nil)
-        
-        let logs = await manager.logs
+
+        manager.log(event: "simple_event", parameters: nil)
+
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 1)
         XCTAssertEqual(logs.first?.name, "simple_event")
         XCTAssertNil(logs.first?.parameters)
     }
-    
-    func testTrackScreenView() async throws {
+
+    func testTrackScreenView() {
         let manager = AnalyticsCollectionManager.shared
-        
-        await manager.track(screenName: "HomeScreen", screenClass: "HomeViewController")
-        
-        let logs = await manager.logs
+
+        manager.track(screenName: "HomeScreen", screenClass: "HomeViewController")
+
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 1)
         XCTAssertEqual(logs.first?.name, "HomeScreen")
         XCTAssertEqual(logs.first?.value, "HomeViewController")
         XCTAssertEqual(logs.first?.type, .screen)
     }
-    
-    func testSetUserProperty() async throws {
+
+    func testSetUserProperty() {
         let manager = AnalyticsCollectionManager.shared
-        
-        await manager.setUserProperty("premium", forName: "subscription_type")
-        
-        let logs = await manager.logs
+
+        manager.setUserProperty("premium", forName: "subscription_type")
+
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 1)
         XCTAssertEqual(logs.first?.name, "subscription_type")
         XCTAssertEqual(logs.first?.value, "premium")
@@ -74,41 +74,36 @@ class Tests: XCTestCase {
     
     // MARK: - Log Management Tests
     
-    func testClearAllLogs() async throws {
+    func testClearAllLogs() {
         let manager = AnalyticsCollectionManager.shared
-        
-        // Add multiple logs
-        await manager.log(event: "event1", parameters: nil)
-        await manager.log(event: "event2", parameters: nil)
-        await manager.log(event: "event3", parameters: nil)
-        
-        var logs = await manager.logs
+
+        manager.log(event: "event1", parameters: nil)
+        manager.log(event: "event2", parameters: nil)
+        manager.log(event: "event3", parameters: nil)
+
+        var logs = manager.logs
         XCTAssertEqual(logs.count, 3)
-        
-        // Clear all logs
-        await manager.clearLogs()
-        
-        logs = await manager.logs
+
+        manager.clearLogs()
+
+        logs = manager.logs
         XCTAssertEqual(logs.count, 0)
     }
-    
-    func testClearSpecificLog() async throws {
+
+    func testClearSpecificLog() {
         let manager = AnalyticsCollectionManager.shared
-        
-        // Add multiple logs
-        await manager.log(event: "event1", parameters: nil)
-        await manager.log(event: "event2", parameters: nil)
-        await manager.log(event: "event3", parameters: nil)
-        
-        // Get logs and remove middle one
-        let logs = await manager.logs
+
+        manager.log(event: "event1", parameters: nil)
+        manager.log(event: "event2", parameters: nil)
+        manager.log(event: "event3", parameters: nil)
+
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 3)
-        
+
         let middleLog = logs[1]
-        await manager.clearLog(middleLog)
-        
-        // Verify correct log removed
-        let remainingLogs = await manager.logs
+        manager.clearLog(middleLog)
+
+        let remainingLogs = manager.logs
         XCTAssertEqual(remainingLogs.count, 2)
         XCTAssertFalse(remainingLogs.contains(where: { $0.id == middleLog.id }))
     }
@@ -117,52 +112,51 @@ class Tests: XCTestCase {
     
     func testConcurrentLogging() async throws {
         let manager = AnalyticsCollectionManager.shared
-        
+
         // Launch 50 concurrent log operations
         await withTaskGroup(of: Void.self) { group in
             for i in 0..<50 {
                 group.addTask {
-                    await manager.log(
+                    manager.log(
                         event: "concurrent_event_\(i)",
                         parameters: ["index": .int(i)]
                     )
                 }
             }
         }
-        
-        // Verify all logs were added
-        let logs = await manager.logs
+
+        // Verify all logs were added (queue.sync waits for all pending writes)
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 50)
-        
-        // Verify no duplicates (actor serialization guarantee)
+
+        // Verify no duplicates (serial queue guarantee)
         let uniqueEvents = Set(logs.map { $0.name })
         XCTAssertEqual(uniqueEvents.count, 50)
     }
-    
+
     func testConcurrentReadsAndWrites() async throws {
         let manager = AnalyticsCollectionManager.shared
-        
         let iterations = 20
-        
+
         // Concurrent writes and reads
         await withTaskGroup(of: Void.self) { group in
             // Writer tasks
             for i in 0..<iterations {
                 group.addTask {
-                    await manager.log(event: "write_\(i)", parameters: nil)
+                    manager.log(event: "write_\(i)", parameters: nil)
                 }
             }
-            
+
             // Reader tasks (interleaved)
             for _ in 0..<iterations {
                 group.addTask {
-                    _ = await manager.logs
+                    _ = manager.logs
                 }
             }
         }
-        
+
         // Verify final count
-        let finalLogs = await manager.logs
+        let finalLogs = manager.logs
         XCTAssertEqual(finalLogs.count, iterations)
     }
     
@@ -171,28 +165,28 @@ class Tests: XCTestCase {
     func testNotificationPostedOnLogUpdate() async throws {
         let expectation = XCTestExpectation(description: "Notification received")
         let manager = AnalyticsCollectionManager.shared
-        
+
         let observer = NotificationCenter.default.addObserver(
-            forName: NSNotification.Name("AnalyticsCollectionManager.didUpdateLogs"),
+            forName: AnalyticsCollectionManager.Notification.didUpdateLogs,
             object: nil,
             queue: nil
         ) { _ in
             expectation.fulfill()
         }
-        
-        await manager.log(event: "test", parameters: nil)
-        
+
+        manager.log(event: "test", parameters: nil)
+
         await fulfillment(of: [expectation], timeout: 1.0)
-        
+
         NotificationCenter.default.removeObserver(observer)
     }
     
     // MARK: - LoggerJsonValue Tests
     
-    func testLoggerJsonValueTypes() async throws {
+    func testLoggerJsonValueTypes() {
         let manager = AnalyticsCollectionManager.shared
-        
-        await manager.log(
+
+        manager.log(
             event: "mixed_types",
             parameters: [
                 "string": .string("test"),
@@ -204,10 +198,10 @@ class Tests: XCTestCase {
                 "null": .null
             ]
         )
-        
-        let logs = await manager.logs
+
+        let logs = manager.logs
         XCTAssertEqual(logs.count, 1)
-        
+
         let params = logs.first?.parameters
         XCTAssertEqual(params?["string"], .string("test"))
         XCTAssertEqual(params?["int"], .int(42))
@@ -217,23 +211,16 @@ class Tests: XCTestCase {
     
     // MARK: - Performance Tests
     
-    func testLoggingPerformance() async throws {
+    func testLoggingPerformance() {
         let manager = AnalyticsCollectionManager.shared
-        
+
         measure {
-            let expectation = XCTestExpectation(description: "Performance test")
-            
-            Task {
-                // Clear logs before each measured iteration
-                await manager.clearLogs()
-                
-                for i in 0..<100 {
-                    await manager.log(event: "perf_event_\(i)", parameters: nil)
-                }
-                expectation.fulfill()
+            for i in 0..<100 {
+                manager.log(event: "perf_event_\(i)", parameters: nil)
             }
-            
-            wait(for: [expectation], timeout: 5.0)
+            // Synchronize via queue.sync to wait for all writes before next iteration
+            _ = manager.logs
+            manager.clearLogs()
         }
     }
 }

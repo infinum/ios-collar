@@ -12,7 +12,7 @@ struct LogListView: View {
 
     @Environment(\.dismiss) private var dismiss
 
-    private let notificationName = AnalyticsCollectionManager.Notification.didUpdateLogs.name
+    private let notificationName = AnalyticsCollectionManager.Notification.didUpdateLogs
     private let analyticsManager = AnalyticsCollectionManager.shared
 
     @State private var items: [LogItem] = []
@@ -121,12 +121,7 @@ struct LogListView: View {
     }
 
     private func updateLogs() {
-        Task {
-            let logs = await analyticsManager.logs
-            await MainActor.run {
-                items = logs.sorted(by: { $0.timestamp > $1.timestamp })
-            }
-        }
+        items = analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
     }
 
     private func navigationView<Content: View>(@ViewBuilder content: () -> Content) -> some View {
@@ -137,9 +132,7 @@ struct LogListView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
                             Button(role: .destructive) {
-                                Task {
-                                    await analyticsManager.clearLogs()
-                                }
+                                analyticsManager.clearLogs()
                             } label: {
                                 Label(Constants.clearLogs, systemImage: "trash.fill")
                             }
