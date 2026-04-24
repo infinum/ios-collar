@@ -87,9 +87,7 @@ struct LogItemView: View {
             }
 
             Button(role: .destructive) {
-                Task {
-                    await analyticsManager.clearLog(item)
-                }
+                analyticsManager.clearLog(item)
             } label: {
                 Label(Constants.removeAction, systemImage: "trash.fill")
             }

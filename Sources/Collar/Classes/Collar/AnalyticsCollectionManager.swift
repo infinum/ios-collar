@@ -27,16 +27,27 @@ public final class AnalyticsCollectionManager: @unchecked Sendable {
 
     private init() {}
 
-    /// All collected log items. Synchronously waits for any pending writes to complete.
+    /// All collected log items. Awaits any pending writes before returning.
     public var logs: [LogItem] {
-        queue.sync { _logs }
+        get async {
+            await withCheckedContinuation { continuation in
+                queue.async { [weak self] in
+                    guard let self else {
+                        continuation.resume(returning: [])
+                        return
+                    }
+                    continuation.resume(returning: _logs)
+                }
+            }
+        }
     }
 
     // MARK: - Log Management
 
     /// Clears all collected logs.
     public func clearLogs() {
-        queue.async { [self] in
+        queue.async { [weak self] in
+            guard let self else { return }
             _logs.removeAll()
             postUpdateNotification()
         }
@@ -45,7 +56,8 @@ public final class AnalyticsCollectionManager: @unchecked Sendable {
     /// Removes a specific log item.
     /// - Parameter logItem: The log item to remove
     public func clearLog(_ logItem: LogItem) {
-        queue.async { [self] in
+        queue.async { [weak self] in
+            guard let self else { return }
             _logs.removeAll { $0.id == logItem.id }
             postUpdateNotification()
         }
@@ -59,7 +71,8 @@ public final class AnalyticsCollectionManager: @unchecked Sendable {
     ///   - screenClass: Optional screen class identifier
     public func track(screenName: String?, screenClass: String? = nil) {
         guard let screenName else { return }
-        queue.async { [self] in
+        queue.async { [weak self] in
+            guard let self else { return }
             appendLog(LogItem(screenName: screenName, screenClass: screenClass))
         }
     }
@@ -69,7 +82,8 @@ public final class AnalyticsCollectionManager: @unchecked Sendable {
     ///   - value: Property value (nil to remove)
     ///   - name: Property name
     public func setUserProperty(_ value: String?, forName name: String) {
-        queue.async { [self] in
+        queue.async { [weak self] in
+            guard let self else { return }
             appendLog(LogItem(userProperty: name, value: value))
         }
     }
@@ -80,7 +94,8 @@ public final class AnalyticsCollectionManager: @unchecked Sendable {
     ///   - timestamp: Event timestamp (defaults to current time)
     ///   - parameters: Optional key-value pairs for event metadata
     public func log(event: String, timestamp: Date = Date(), parameters: [String: LoggerJsonValue]? = nil) {
-        queue.async { [self] in
+        queue.async { [weak self] in
+            guard let self else { return }
             appendLog(LogItem(event: event, timestamp: timestamp, parameters: parameters))
         }
     }

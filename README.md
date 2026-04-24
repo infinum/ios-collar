@@ -40,9 +40,8 @@ dependencies: [
 
 Collar v2.0.0 introduces Swift 6 concurrency support with **breaking changes**:
 
-- All `AnalyticsCollectionManager` methods are now `async` and must be `await`ed
-- The manager is now an `actor` providing compiler-verified thread safety
-- Notifications are posted on the actor's queue (not main queue) - observers must handle their own threading
+- The `logs` read property is now `async` and must be `await`ed
+- Notifications are posted on an internal serial `DispatchQueue` (not the main queue) - observers must handle their own threading
 
 See the [Migration Guide](#migration-from-v1x-to-v20) below for detailed upgrade instructions.
 
@@ -53,30 +52,20 @@ See the [Migration Guide](#migration-from-v1x-to-v20) below for detailed upgrade
 ```swift
 import Collar
 
-// Events (now async)
-await AnalyticsCollectionManager.shared.log(event: "some_event", parameters: [
+// Events
+AnalyticsCollectionManager.shared.log(event: "some_event", parameters: [
     "param1": "value1",
     "param2": "value2"
 ])
 
-// User properties (now async)
-await AnalyticsCollectionManager.shared.setUserProperty("some_value", forName: "user_property_key")
+// User properties
+AnalyticsCollectionManager.shared.setUserProperty("some_value", forName: "user_property_key")
 
-// Screen views (now async)
-await AnalyticsCollectionManager.shared.track(screenName: "Home", screenClass: "HomeViewController")
+// Screen views
+AnalyticsCollectionManager.shared.track(screenName: "Home", screenClass: "HomeViewController")
 ```
 
-**From non-async contexts (e.g., UIKit lifecycle methods), wrap calls in a Task:**
-
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    Task {
-        await AnalyticsCollectionManager.shared.log(event: "screen_loaded", parameters: nil)
-    }
-}
-```
+**These calls dispatch fire-and-forget onto an internal queue and return immediately — no `await` needed.**
 
 **IMPORTANT:** Collar does **NOT** send out analytics data to remote services. This is left for the developer to solve in their own codebase, with Collar being simply a reflection of the current state of analytics data.
 
@@ -96,14 +85,14 @@ Button(action: { isPresented = true }) { ... }
 ##### 3. Reading logs asynchronously:
 
 ```swift
-// Get all logs (now async)
+// Get all logs (async)
 let logs = await AnalyticsCollectionManager.shared.logs
 
-// Clear all logs (now async)
-await AnalyticsCollectionManager.shared.clearLogs()
+// Clear all logs
+AnalyticsCollectionManager.shared.clearLogs()
 
-// Clear specific log (now async)
-await AnalyticsCollectionManager.shared.clearLog(logItem)
+// Clear specific log
+AnalyticsCollectionManager.shared.clearLog(logItem)
 ```
 
 ##### 4. Observing log updates (notification threading):
@@ -114,7 +103,7 @@ NotificationCenter.default.addObserver(
     object: nil,
     queue: nil
 ) { _ in
-    // ⚠️ v2.0: Notification is posted on actor's queue (NOT main queue)
+    // ⚠️ v2.0: Notification is posted on an internal serial DispatchQueue (NOT main queue)
     // For UI updates, dispatch to main queue:
     Task { @MainActor in
         self.updateUI()
@@ -132,21 +121,20 @@ Update your `Podfile` or `Package.swift` to v2.0.0:
 pod 'Collar', '~> 2.0'
 ```
 
-### Step 2: Add `await` to all analytics calls
+### Step 2: Update log reads to `await`
+
+Write methods (`log`, `setUserProperty`, `track`, `clearLogs`, `clearLog`) are unchanged — no `await` needed.
+
+Only the `logs` read property is now `async`:
 
 **Before (v1.x):**
 ```swift
-AnalyticsCollectionManager.shared.log(event: "button_tap", parameters: nil)
+let logs = AnalyticsCollectionManager.shared.logs // Blocking sync call
 ```
 
 **After (v2.0):**
 ```swift
-await AnalyticsCollectionManager.shared.log(event: "button_tap", parameters: nil)
-
-// Or from non-async context:
-Task {
-    await AnalyticsCollectionManager.shared.log(event: "button_tap", parameters: nil)
-}
+let logs = await AnalyticsCollectionManager.shared.logs // Non-blocking async
 ```
 
 ### Step 3: Update notification observers
@@ -165,18 +153,6 @@ NotificationCenter.default.addObserver(...) { _ in
         self.updateUI() // Explicit main queue dispatch
     }
 }
-```
-
-### Step 4: Update log reads
-
-**Before (v1.x):**
-```swift
-let logs = AnalyticsCollectionManager.shared.logs // Blocking sync call
-```
-
-**After (v2.0):**
-```swift
-let logs = await AnalyticsCollectionManager.shared.logs // Non-blocking async
 ```
 
 ## Important

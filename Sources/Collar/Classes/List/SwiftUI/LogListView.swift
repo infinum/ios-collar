@@ -50,8 +50,8 @@ struct LogListView: View {
             ScrollView {
                 listView
             }
-            .onReceive(NotificationCenter.default.publisher(for: notificationName)) { _ in updateLogs() }
-            .onAppear(perform: updateLogs)
+            .onReceive(NotificationCenter.default.publisher(for: notificationName)) { _ in Task { await updateLogs() } }
+            .onAppear { Task { await updateLogs() } }
         }
     }
 
@@ -120,8 +120,8 @@ struct LogListView: View {
             .frame(width: Constants.timelineSize)
     }
 
-    private func updateLogs() {
-        items = analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
+    private func updateLogs() async {
+        items = await analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
     }
 
     private func navigationView<Content: View>(@ViewBuilder content: () -> Content) -> some View {

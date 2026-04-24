@@ -42,13 +42,17 @@ public struct LogItem: CustomStringConvertible, Identifiable, Sendable {
         self.parameters = parameters
     }
 
+    private static let iso8601Formatter: ISO8601DateFormatter = {
+        let f = ISO8601DateFormatter()
+        f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return f
+    }()
+
     public var description: String {
         var lines: [String] = []
         lines.append("Type: \(type.rawValue)")
         lines.append("Name: \(name)")
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        lines.append("Timestamp: \(formatter.string(from: timestamp))")
+        lines.append("Timestamp: \(LogItem.iso8601Formatter.string(from: timestamp))")
         if let value = value {
             switch type {
             case .screen:
