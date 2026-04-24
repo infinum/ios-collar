@@ -86,7 +86,9 @@ struct LogItemView: View {
                 Label(Constants.copyAction, systemImage: "document.on.document.fill")
             }
 
-            Button(role: .destructive, action: { analyticsManager.clearLog(item) }) {
+            Button(role: .destructive) {
+                analyticsManager.clearLog(item)
+            } label: {
                 Label(Constants.removeAction, systemImage: "trash.fill")
             }
         } label: {

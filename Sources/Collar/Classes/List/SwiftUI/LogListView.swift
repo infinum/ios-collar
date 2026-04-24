@@ -12,7 +12,7 @@ struct LogListView: View {
 
     @Environment(\.dismiss) private var dismiss
 
-    private let notificationName = AnalyticsCollectionManager.Notification.didUpdateLogs.name
+    private let notificationName = AnalyticsCollectionManager.Notification.didUpdateLogs
     private let analyticsManager = AnalyticsCollectionManager.shared
 
     @State private var items: [LogItem] = []
@@ -50,8 +50,8 @@ struct LogListView: View {
             ScrollView {
                 listView
             }
-            .onReceive(NotificationCenter.default.publisher(for: notificationName)) { _ in updateLogs() }
-            .onAppear(perform: updateLogs)
+            .onReceive(NotificationCenter.default.publisher(for: notificationName)) { _ in Task { await updateLogs() } }
+            .onAppear { Task { await updateLogs() } }
         }
     }
 
@@ -120,8 +120,8 @@ struct LogListView: View {
             .frame(width: Constants.timelineSize)
     }
 
-    private func updateLogs() {
-        items = analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
+    private func updateLogs() async {
+        items = await analyticsManager.logs.sorted(by: { $0.timestamp > $1.timestamp })
     }
 
     private func navigationView<Content: View>(@ViewBuilder content: () -> Content) -> some View {
@@ -131,7 +131,9 @@ struct LogListView: View {
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu {
-                            Button(role: .destructive, action: analyticsManager.clearLogs) {
+                            Button(role: .destructive) {
+                                analyticsManager.clearLogs()
+                            } label: {
                                 Label(Constants.clearLogs, systemImage: "trash.fill")
                             }
                         } label: {

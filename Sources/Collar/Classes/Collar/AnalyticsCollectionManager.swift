@@ -8,134 +8,106 @@
 
 import Foundation
 
-public enum LogType: String {
-    case userProperty = "User property"
-    case event = "Event"
-    case screen = "Screen view"
-}
+/// Thread-safe analytics collection manager.
+/// Internal thread safety is managed via a serial dispatch queue.
+public final class AnalyticsCollectionManager: @unchecked Sendable {
 
-public struct LogItem: CustomStringConvertible, Identifiable {
-    public let id = UUID()
-    public let type: LogType
-    public let name: String
-    public let timestamp: Date
-    public let value: String?
-    public let parameters: [String: Any]?
-
-    static let dateFormatter = ISO8601DateFormatter()
-
-    init(screenName: String, screenClass: String?) {
-        self.init(type: .screen, name: screenName, value: screenClass)
-    }
-    
-    init(event: String, timestamp: Date, parameters: [String: Any]?) {
-        self.init(type: .event, name: event, timestamp: timestamp, parameters: parameters)
-    }
-    
-    init(userProperty: String, value: String?) {
-        self.init(type: .userProperty, name: userProperty, value: value)
-    }
-    
-    init(type: LogType, name: String, timestamp: Date = Date(), value: String? = nil, parameters: [String: Any]? = nil) {
-        self.type = type
-        self.name = name
-        self.timestamp = timestamp
-        self.value = value
-        self.parameters = parameters
+    /// Notification name posted when logs are updated.
+    /// - Important: Posted on the internal serial queue. Dispatch to the main queue
+    ///   in your observer if you need to update UI.
+    public enum Notification {
+        public static let didUpdateLogs = Foundation.Notification.Name("AnalyticsCollectionManager.didUpdateLogs")
     }
 
-    public var description: String {
-        var lines: [String] = []
-        lines.append("Type: \(type.rawValue)")
-        lines.append("Name: \(name)")
-        lines.append("Timestamp: \(LogItem.dateFormatter.string(from: timestamp))")
-        if let value = value {
-            switch type {
-            case .screen:
-                lines.append("Screen class: \(value)")
-            default:
-                lines.append("Value: \(value)")
+    /// Shared instance for application-wide analytics collection.
+    public static let shared = AnalyticsCollectionManager()
+
+    private let queue = DispatchQueue(label: "com.infinum.collar.analytics", qos: .utility)
+    private var _logs: [LogItem] = []
+
+    private init() {}
+
+    /// All collected log items. Awaits any pending writes before returning.
+    public var logs: [LogItem] {
+        get async {
+            await withCheckedContinuation { continuation in
+                queue.async { [weak self] in
+                    guard let self else {
+                        continuation.resume(returning: [])
+                        return
+                    }
+                    continuation.resume(returning: _logs)
+                }
             }
         }
-        if let params = paramsJSONString {
-            lines.append("Parameters: \(params)")
-        }
-        return lines.joined(separator: "\n")
-    }
-}
-
-public class AnalyticsCollectionManager {
-    
-    public enum Notification {
-        public static var didUpdateLogs = Foundation.Notification(name: .init("AnalyticsCollectionManager.didUpdateLogs"))
-    }
-    
-    public static let shared = AnalyticsCollectionManager()
-    
-    public private(set) var logs: [LogItem] = [] {
-        didSet {
-            NotificationCenter.default.post(AnalyticsCollectionManager.Notification.didUpdateLogs)
-        }
     }
 
+    // MARK: - Log Management
+
+    /// Clears all collected logs.
     public func clearLogs() {
-        logs = []
+        queue.async { [weak self] in
+            guard let self else { return }
+            _logs.removeAll()
+            postUpdateNotification()
+        }
     }
 
+    /// Removes a specific log item.
+    /// - Parameter logItem: The log item to remove
     public func clearLog(_ logItem: LogItem) {
-        logs = logs.filter { $0.id != logItem.id }
-    }
-}
-
-// MARK: - Logging
-
-public extension AnalyticsCollectionManager {
-    
-    func track(screenName: String?, screenClass: String?) {
-        guard let screenName = screenName else { return }
-        DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(screenName: screenName, screenClass: screenClass))
+        queue.async { [weak self] in
+            guard let self else { return }
+            _logs.removeAll { $0.id == logItem.id }
+            postUpdateNotification()
         }
     }
 
-    func setUserProperty(_ value: String?, forName name: String) {
-        DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(userProperty: name, value: value))
-        }
-    }
-    
-    func log(event: String, timestamp: Date = Date(), parameters: [String: Any]?) {
-        DispatchQueue.main.async { [weak self] in
-            self?.logs.append(.init(event: event, timestamp: timestamp, parameters: parameters))
-        }
-    }
-}
+    // MARK: - Logging
 
-extension LogItem {
-    
-    var paramsJSONString: String? {
-        guard
-            let parameters = parameters,
-            !parameters.isEmpty
-        else { return nil }
-        let data = try? JSONSerialization
-            .data(withJSONObject: parameters, options: [.prettyPrinted, .sortedKeys])
-        return data
-            .flatMap { String(data: $0, encoding: .utf8) }
-    }
-
-    var subtitleDisplay: String? {
-        switch type {
-        case .event:
-            return paramsJSONString
-        case .userProperty, .screen:
-            return value
+    /// Tracks a screen view event.
+    /// - Parameters:
+    ///   - screenName: Name of the screen being viewed
+    ///   - screenClass: Optional screen class identifier
+    public func track(screenName: String?, screenClass: String? = nil) {
+        guard let screenName else { return }
+        queue.async { [weak self] in
+            guard let self else { return }
+            appendLog(LogItem(screenName: screenName, screenClass: screenClass))
         }
     }
 
-    var pasteboardString: String {
-        let parameters = "Parameters: " + (subtitleDisplay ?? "")
-        let timestamp = "Timestamp: " + timestamp.description
-        return type.rawValue + ": " + name + "\n" + timestamp + "\n" + parameters
+    /// Sets a user property for analytics.
+    /// - Parameters:
+    ///   - value: Property value (nil to remove)
+    ///   - name: Property name
+    public func setUserProperty(_ value: String?, forName name: String) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            appendLog(LogItem(userProperty: name, value: value))
+        }
+    }
+
+    /// Logs an analytics event with optional parameters.
+    /// - Parameters:
+    ///   - event: Event name (e.g., "button_tap", "screen_view")
+    ///   - timestamp: Event timestamp (defaults to current time)
+    ///   - parameters: Optional key-value pairs for event metadata
+    public func log(event: String, timestamp: Date = Date(), parameters: [String: LoggerJsonValue]? = nil) {
+        queue.async { [weak self] in
+            guard let self else { return }
+            appendLog(LogItem(event: event, timestamp: timestamp, parameters: parameters))
+        }
+    }
+
+    // MARK: - Private helpers
+
+    private func appendLog(_ log: LogItem) {
+        _logs.append(log)
+        postUpdateNotification()
+    }
+
+    private func postUpdateNotification() {
+        NotificationCenter.default.post(name: AnalyticsCollectionManager.Notification.didUpdateLogs, object: nil)
     }
 }
